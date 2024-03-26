@@ -1,0 +1,38 @@
+.nav-links {
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+
+    .active.nav-links::before {
+        content: "";
+        position: absolute;
+        top: -20%;
+        left: 0;
+        right: 0;
+        margin-inline: auto;
+        width: 100%;
+        height: 4px;
+        background-color: #337ab7;
+        z-index: 1;
+        transition: all 0.3s;
+      }
+
+  .nav-links::before {
+    content: "";
+    position: absolute;
+    top: -20%;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    width: 0%;
+    height: 4px;
+    background-color: #337ab7;
+    z-index: 1;
+    transition: all 0.3s;
+  }
+
+  .nav-links:hover::before {
+    width: 100%;
+  }
+}
