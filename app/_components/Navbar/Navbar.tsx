@@ -7,6 +7,7 @@ import { usePathname } from "next/navigation";
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { VscTriangleDown } from "react-icons/vsc";
+import Dropdown from "./Dropdown";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -47,7 +48,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="flex justify-between items-center md:flex-wrap w-full px-4 md:px-10 lg:px-40 pt-4 md:pt-10 pb-4 nav">
+    <div className="flex justify-between items-center gap-4 md:flex-wrap w-full px-4 md:px-10 lg:px-32 pt-4 md:pt-10 pb-4 nav">
       <div>
         {/* <h1 className="text-5xl font-signature ml-2"><a className="link-underline hover:transition ease-in-out delay-150 hover:underline hover:decoration-solid" href="">Logo</a></h1> */}
         <h1 className="text-5xl font-signature ml-2">
@@ -67,30 +68,64 @@ const Navbar = () => {
         {links.map(({ id, link, title }) => (
           <li
             key={id}
-            className={`${pathname === link ? "active" : ""} nav-links cursor-pointer uppercase text-[#666]`}
+            className={`${
+              pathname === link ? "active" : ""
+            } nav-links cursor-pointer uppercase text-[#666]`}
           >
             <Link href={link}>{title}</Link>
           </li>
         ))}
         <li key={7} className="nav-links cursor-pointer uppercase text-[#666] ">
-          RG on Social Media <VscTriangleDown className="inline" />
+          <Dropdown
+            text="RG on Social Media"
+            links={[
+              {
+                title: "Facebook",
+                link: "#",
+              },
+              {
+                title: "Twitter",
+                link: "#",
+              },
+              {
+                title: "Instagram",
+                link: "#",
+              },
+              {
+                title: "Youtube",
+                link: "#",
+              },
+            ]}
+          />
         </li>
         <li>
-          <button className="uppercase px-2 py-2 bg-[#337ab7] text-white order-1">
-            Language <VscTriangleDown className="inline" />
-          </button>
+          <div className="uppercase bg-[#337ab7] text-white order-1">
+            <Dropdown
+              text={"Language"}
+              links={[
+                {
+                  title: "English",
+                  link: "#",
+                },
+                {
+                  title: "Hindi",
+                  link: "#",
+                },
+              ]}
+            />
+          </div>
         </li>
       </ul>
 
       <div
         onClick={() => setNav(!nav)}
-        className="cursor-pointer p-2 bg-[#337ab7] text-white z-10 text-gray-500 md:hidden order-2"
+        className="cursor-pointer p-2 bg-[#337ab7] text-white z-10 text-gray-500 md:hidden order-2 z-50"
       >
         {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
       </div>
 
       {nav && (
-        <ul className="flex flex-col justify-center absolute top-0 left-0 w-full h-screen bg-white text-gray-500 text-xl uppercase">
+        <ul className="flex flex-col justify-center absolute top-0 left-0 z-50 w-full h-screen bg-white text-gray-500 text-xl uppercase">
           {links.map(({ id, link, title }) => (
             <li key={id} className="px-4 cursor-pointer py-6">
               <Link onClick={() => setNav(!nav)} href={link}>
@@ -99,14 +134,46 @@ const Navbar = () => {
             </li>
           ))}
           <li key={7} className="px-4 cursor-pointer text-[#666] py-6">
-            RG on Social Media <VscTriangleDown className="inline" />
+            <Dropdown
+              text="RG on Social Media"
+              links={[
+                {
+                  title: "Facebook",
+                  link: "#",
+                },
+                {
+                  title: "Twitter",
+                  link: "#",
+                },
+                {
+                  title: "Instagram",
+                  link: "#",
+                },
+                {
+                  title: "Youtube",
+                  link: "#",
+                },
+              ]}
+            />
           </li>
         </ul>
       )}
 
-      <button className="uppercase px-2 py-2 bg-[#337ab7] text-white md:hidden order-1">
-        Language <VscTriangleDown className="inline" />
-      </button>
+      <div className="uppercase bg-[#337ab7] text-white md:hidden order-1">
+        <Dropdown
+          text="Language"
+          links={[
+            {
+              title: "English",
+              link: "#",
+            },
+            {
+              title: "Hindi",
+              link: "#",
+            },
+          ]}
+        />
+      </div>
     </div>
   );
 };
