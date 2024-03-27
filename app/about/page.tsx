@@ -8,15 +8,16 @@ import { FaGooglePlusSquare } from "react-icons/fa";
 const page = () => {
   return (
     <div className="">
+
+      <div className="bg-white">
       <Image
         src="/assets/Rahul.jpg"
         alt="Vercel Logo"
         width={1980}
         height={1223}
-        className="relative"
+        className=""
       />
-      <div className="bg-white">
-        <div className="bg-white absolute top-1/2 m-20 p-20">
+        <div className="bg-white p-80 pt-10 z-0">
           <div className="flex items-center justify-between">
             <h1 className="text-4xl text-slate-900">About Rahul Gandhi</h1>
             <div className="flex space-x-2 text-slate-400">
