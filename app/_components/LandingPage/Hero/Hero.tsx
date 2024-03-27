@@ -24,11 +24,11 @@ export default function Hero() {
           Rahul Gandhi spent his early childhood between Delhi, the political
           center of India, and Dehradun, a town nestled in the valley between
           the Himalayas and Shivaliks. He began his undergraduate career at
-          Delhi’s St. Stephen’s College before moving to Harvard University in
+          Delhi&quot;s St. Stephen&quot;s College before moving to Harvard University in
           the USA. In his second year, Rahul transferred to Rollins College in
-          Florida due to security threats following his father’s, the late Prime
+          Florida due to security threats following his father&quot;s, the late Prime
           Minister Rajiv Gandhi, assassination. Rahul Gandhi graduated with a
-          Bachelor’s degree in 1994. The year after, he obtained his M. Phil
+          Bachelor&quot;s degree in 1994. The year after, he obtained his M. Phil
           from Trinity College, Cambridge.
         </p>
         <a href="/" className="text-blue-500">
