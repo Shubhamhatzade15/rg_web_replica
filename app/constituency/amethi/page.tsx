@@ -1,15 +1,13 @@
 import React from "react";
 
 import Hero from "./hero";
-import Lists from "./Lists";
+import List from "./List";
 
-const page = () => {
+export default function page() {
   return (
     <div>
       <Hero />
-      <Lists />
+      <List />
     </div>
   );
-};
-
-export default page;
+}
