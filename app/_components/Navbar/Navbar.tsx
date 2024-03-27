@@ -48,7 +48,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="flex justify-between items-center gap-4 md:flex-wrap w-full px-4 md:px-10 lg:px-32 pt-4 md:pt-10 pb-4 nav">
+    <div className="flex justify-between items-center gap-x-4 md:gap-x-8 md:flex-wrap w-full px-4 md:px-10  pt-4 md:pt-10 pb-4 nav">
       <div>
         {/* <h1 className="text-5xl font-signature ml-2"><a className="link-underline hover:transition ease-in-out delay-150 hover:underline hover:decoration-solid" href="">Logo</a></h1> */}
         <h1 className="text-5xl font-signature ml-2">
@@ -57,14 +57,14 @@ const Navbar = () => {
               src="/assets/logo.png"
               width={400}
               height={400}
-              className="max-w-[150px] max-h-auto"
+              className="max-w-[100px] md:max-w-[150px] max-h-auto"
               alt="logo"
             />
           </a>
         </h1>
       </div>
 
-      <ul className="hidden md:flex items-center flex-wrap gap-8 my-4 ">
+      <ul className="hidden md:flex items-center flex-wrap gap-6 my-4 ">
         {links.map(({ id, link, title }) => (
           <li
             key={id}
@@ -121,7 +121,7 @@ const Navbar = () => {
         onClick={() => setNav(!nav)}
         className="cursor-pointer p-2 bg-[#337ab7] text-white z-10 text-gray-500 md:hidden order-2 z-50"
       >
-        {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
+        {nav ? <FaTimes className="text-xl" /> : <FaBars className="text-xl" />}
       </div>
 
       {nav && (
