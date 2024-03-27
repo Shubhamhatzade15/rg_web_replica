@@ -67,7 +67,9 @@ const Navbar = () => {
         {links.map(({ id, link, title }) => (
           <li
             key={id}
-            className={`${pathname === link ? "active" : ""} nav-links cursor-pointer uppercase text-[#666]`}
+            className={`${
+              pathname === link ? "active" : ""
+            } nav-links cursor-pointer uppercase text-[#666]`}
           >
             <Link href={link}>{title}</Link>
           </li>

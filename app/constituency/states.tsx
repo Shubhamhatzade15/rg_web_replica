@@ -23,7 +23,7 @@ const states = () => {
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
             <Link
-              href=""
+              href="/constituency/wayanad"
               className="text-[16px] md:text-[20px] lg:text-[25px] tracking-tighter underline mt-10 "
             >
               Wayanad
@@ -37,7 +37,7 @@ const states = () => {
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
             <Link
-              href=""
+              href="/constituency/amethi"
               className="text-[16px] md:text-[20px] lg:text-[25px] tracking-tighter underline mt-10 "
             >
               Amethi
