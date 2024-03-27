@@ -14,8 +14,8 @@ export default function Hero() {
           className="object-cover w-full h-full"
         />
         <div className="w-full py-4 px-2 bg-[#337ab7] bg-opacity-60 absolute bottom-0 left-0 text-center text-white">
-          "The Congress Party is about conversation. I'm not coming here to tell
-          you what to think, I'm coming here to listen to what you have to say"
+        &quot;The Congress Party is about conversation. I&quot;m not coming here to tell
+          you what to think, I&quot;m coming here to listen to what you have to say&quot;
         </div>
       </div>
 
