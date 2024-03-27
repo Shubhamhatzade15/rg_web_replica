@@ -1,8 +1,18 @@
 import Image from "next/image";
-import React from "react";
-import "./Hero.css"
+import React, { useEffect } from "react";
+import "./Hero.css";
+import useEmblaCarousel from "embla-carousel-react";
+import Autoplay from "embla-carousel-autoplay";
 
 export default function Hero() {
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay()]);
+
+  useEffect(() => {
+    if (emblaApi) {
+      console.log(emblaApi.slideNodes()) // Access API
+    }
+  }, [emblaApi])
+
   return (
     <div>
       <div className="bg-gray-300 w-full aspect-video md:aspect-[3/1] relative">
@@ -13,9 +23,27 @@ export default function Hero() {
           height={2000}
           className="object-cover w-full h-full"
         />
-        <div className="w-full py-4 px-2 bg-[#337ab7] bg-opacity-60 absolute bottom-0 left-0 text-center text-white">
-        &quot;The Congress Party is about conversation. I&quot;m not coming here to tell
-          you what to think, I&quot;m coming here to listen to what you have to say&quot;
+        <div
+          className="embla w-full py-4 px-2 bg-[#337ab7] bg-opacity-60 absolute bottom-0 left-0 text-center text-white"
+          ref={emblaRef}
+        >
+          <div className="embla__container gap-2 items-center">
+            <div className="embla__slide">
+              <p>
+                &quot;If one accepts the notion that ideas capture people then the only possible response to a person infected by a bad idea, is love and compassion.&quot;
+              </p>
+            </div>
+            <div className="embla__slide">
+              <p>
+                &quot;If opportunity is limited to a few, our growth will be a fraction of our capability as a nation.&quot;
+              </p>
+            </div>
+            <div className="embla__slide">
+              <p>
+                &quot;The Congress Party constructs a bottom-up vision.&quot;
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -24,12 +52,12 @@ export default function Hero() {
           Rahul Gandhi spent his early childhood between Delhi, the political
           center of India, and Dehradun, a town nestled in the valley between
           the Himalayas and Shivaliks. He began his undergraduate career at
-          Delhi&quot;s St. Stephen&quot;s College before moving to Harvard University in
-          the USA. In his second year, Rahul transferred to Rollins College in
-          Florida due to security threats following his father&quot;s, the late Prime
-          Minister Rajiv Gandhi, assassination. Rahul Gandhi graduated with a
-          Bachelor&quot;s degree in 1994. The year after, he obtained his M. Phil
-          from Trinity College, Cambridge.
+          Delhi&quot;s St. Stephen&quot;s College before moving to Harvard
+          University in the USA. In his second year, Rahul transferred to
+          Rollins College in Florida due to security threats following his
+          father&quot;s, the late Prime Minister Rajiv Gandhi, assassination.
+          Rahul Gandhi graduated with a Bachelor&quot;s degree in 1994. The year
+          after, he obtained his M. Phil from Trinity College, Cambridge.
         </p>
         <a href="/" className="text-blue-500">
           Read More

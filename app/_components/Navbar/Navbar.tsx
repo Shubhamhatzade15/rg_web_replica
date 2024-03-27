@@ -40,7 +40,7 @@ const Navbar = () => {
       title: "Media",
       link: "/media",
     },
-    {
+    { 
       id: 6,
       title: "Busting Myths",
       link: "/busting-myths",
@@ -48,7 +48,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="flex justify-between items-center md:flex-wrap w-full px-4 md:px-10 lg:px-40 pt-4 md:pt-10 pb-4 nav">
+    <div className="flex justify-between items-center gap-4 md:flex-wrap w-full px-4 md:px-10 lg:px-32 pt-4 md:pt-10 pb-4 nav">
       <div>
         {/* <h1 className="text-5xl font-signature ml-2"><a className="link-underline hover:transition ease-in-out delay-150 hover:underline hover:decoration-solid" href="">Logo</a></h1> */}
         <h1 className="text-5xl font-signature ml-2">
