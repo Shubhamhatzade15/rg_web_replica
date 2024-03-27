@@ -13,20 +13,20 @@ export default function BustingMyths() {
           </p>
           <p className="my-2">
             Here, for your entertainment, are some of the craziest tales spun by
-            the opposition's propaganda factory. And the truth.
+            the opposition&apos;s propaganda factory. And the truth.
           </p>
         </div>
         <div className="my-8">
           <h2 className="font-bold text-lg">
-            What about the viral video where Rahul Gandhi speaks about 'aloo ki
-            factory'?
+            What about the viral video where Rahul Gandhi speaks about &apos;aloo ki
+            factory&apos;?
           </h2>
           <p className="my-2">
             Context is everything. That bit was a fragment of an interaction
             with distressed farmers in Uttar Pradesh. One farmer suggested a
             potato chip factory in the region, to which Mr Gandhi responded. The
             entire interaction is presented here (comment in question at 1.22)
-            Farmers' concerns and agricultural policy are clearly not as 'viral'
+            Farmers&apos; concerns and agricultural policy are clearly not as &apos;viral&apos;
             as a sentence plucked out of context by an opposition more
             comfortable with jeering than thinking.
           </p>
@@ -47,9 +47,9 @@ export default function BustingMyths() {
           </h2>
           <p className="my-2">
             That is indeed a ludicrous thing to say. Only, Rahul Gandhi didn't
-            make that claim, he was making fun of the prime minister's
+            make that claim, he was making fun of the prime minister&apos;s
             outrageous promises. Again, a fragment of the speech was deviously
-            presented by the BJP's team, to suggest the very opposite. Here is
+            presented by the BJP&apos;s team, to suggest the very opposite. Here is
             the full video, for those who care about the truth.
           </p>
 
@@ -110,7 +110,7 @@ export default function BustingMyths() {
         </div>
         <div className="my-8">
           <h2 className="font-bold text-lg">
-            Why did he say 'poverty is a state of mind'?
+            Why did he say &apos;poverty is a state of mind&apos;?
           </h2>
           <p className="my-2">
             Rahul Gandhi had said that apart from material deprivation, poverty
@@ -138,7 +138,7 @@ export default function BustingMyths() {
           </p>
           <p className="my-2">
             This list is likely to keep growing. Lies will continue being
-            generated, because the only limits are in the BJP's imagination.
+            generated, because the only limits are in the BJP&apos;s imagination.
             Some of these allegations, though, are more serious and
             unconscionable than others:
           </p>
