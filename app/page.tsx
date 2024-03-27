@@ -5,6 +5,8 @@ import { useState } from "react";
 import ReactSimplyCarousel from "react-simply-carousel";
 import Hero from "./_components/LandingPage/Hero/Hero";
 import Video from "./_components/LandingPage/Video/Video";
+import Form from "./_components/LandingPage/Form/Form";
+import Social from "./_components/LandingPage/Social/Social";
 
 export default function Home() {
   const [activeSlideIndex, setActiveSlideIndex] = useState(0);
@@ -32,6 +34,8 @@ export default function Home() {
     <main className="">
       <Hero />
       <Video />
+      <Social />
+      <Form />
     </main>
   );
 }
