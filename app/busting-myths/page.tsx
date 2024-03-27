@@ -46,7 +46,7 @@ export default function BustingMyths() {
             turn potatoes into gold (aloo se sona niklega)?
           </h2>
           <p className="my-2">
-            That is indeed a ludicrous thing to say. Only, Rahul Gandhi didn't
+            That is indeed a ludicrous thing to say. Only, Rahul Gandhi didn&apos;t
             make that claim, he was making fun of the prime minister&apos;s
             outrageous promises. Again, a fragment of the speech was deviously
             presented by the BJP&apos;s team, to suggest the very opposite. Here is
@@ -94,7 +94,7 @@ export default function BustingMyths() {
             reach the same footing as others. As a socially disadvantaged
             community, it takes greater effort for them to shake off the
             downward pull of their environment. Just like it takes greater
-            energy to escape Jupiter's gravitational field than that of earth.
+            energy to escape Jupiter&apos;s gravitational field than that of earth.
           </p>
           <p className="my-2">
             Escape velocity is also a commonly used term in social research -
@@ -105,7 +105,7 @@ export default function BustingMyths() {
             </a>
           </p>
           <p className="my-2">
-            It's not that hard to understand, even for the BJP.
+            It&apos;s not that hard to understand, even for the BJP.
           </p>
         </div>
         <div className="my-8">
@@ -160,7 +160,7 @@ export default function BustingMyths() {
             That this malicious lie continues to lurk in a right-wing
             echo-chamber shows that some people are impervious to the truth and
             contemptuous of due legal process. They will go to any length to
-            discredit someone they don't like.
+            discredit someone they don&apos;t like.
           </p>
         </div>
         <div className="my-8">
