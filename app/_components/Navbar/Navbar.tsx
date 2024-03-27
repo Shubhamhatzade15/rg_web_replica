@@ -7,6 +7,7 @@ import { usePathname } from "next/navigation";
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { VscTriangleDown } from "react-icons/vsc";
+import Dropdown from "./Dropdown";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -67,18 +68,49 @@ const Navbar = () => {
         {links.map(({ id, link, title }) => (
           <li
             key={id}
-            className={`${pathname === link ? "active" : ""} nav-links cursor-pointer uppercase text-[#666]`}
+            className={`${
+              pathname === link ? "active" : ""
+            } nav-links cursor-pointer uppercase text-[#666]`}
           >
             <Link href={link}>{title}</Link>
           </li>
         ))}
         <li key={7} className="nav-links cursor-pointer uppercase text-[#666] ">
-          RG on Social Media <VscTriangleDown className="inline" />
+          <Dropdown text="RG on Social Media" links={[
+            {
+              title: "Facebook",
+              link: "#",
+            },
+            {
+              title: "Twitter",
+              link: "#",
+            },
+            {
+              title: "Instagram",
+              link: "#",
+            },
+            {
+              title: "Youtube",
+              link: "#",
+            },
+          ]} />
         </li>
         <li>
-          <button className="uppercase px-2 py-2 bg-[#337ab7] text-white order-1">
-            Language <VscTriangleDown className="inline" />
-          </button>
+          <div className="uppercase bg-[#337ab7] text-white order-1">
+            <Dropdown
+              text={"Language"}
+              links={[
+                {
+                  title: "English",
+                  link: "#",
+                },
+                {
+                  title: "Hindi",
+                  link: "#",
+                },
+              ]}
+            />
+          </div>
         </li>
       </ul>
 
@@ -104,9 +136,21 @@ const Navbar = () => {
         </ul>
       )}
 
-      <button className="uppercase px-2 py-2 bg-[#337ab7] text-white md:hidden order-1">
-        Language <VscTriangleDown className="inline" />
-      </button>
+      <div className="uppercase bg-[#337ab7] text-white md:hidden order-1">
+        <Dropdown
+          text="Language"
+          links={[
+            {
+              title: "English",
+              link: "#",
+            },
+            {
+              title: "Hindi",
+              link: "#",
+            },
+          ]}
+        />
+      </div>
     </div>
   );
 };
