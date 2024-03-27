@@ -117,8 +117,9 @@ export default function Media() {
           <div className="py-8 grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
               <div className="aspect-video bg-black">
-                <img
+                <Image
                   src="/assets/Media/people_of_wayanad_shri_rahul_gandhi_1.jpg"
+                  alt="blog image"
                   width={400}
                   height={400}
                 />
@@ -130,8 +131,9 @@ export default function Media() {
             </div>
             <div>
               <div className="aspect-video bg-black">
-                <img
+                <Image
                   src="/assets/Media/people_of_wayanad_shri_rahul_gandhi_1.jpg"
+                  alt="blog image"
                   width={400}
                   height={400}
                 />
@@ -143,8 +145,9 @@ export default function Media() {
             </div>
             <div>
               <div className="aspect-video bg-black">
-                <img
+                <Image
                   src="/assets/Media/people_of_wayanad_shri_rahul_gandhi_1.jpg"
+                  alt="blog image"
                   width={400}
                   height={400}
                 />
@@ -156,8 +159,9 @@ export default function Media() {
             </div>
             <div>
               <div className="aspect-video bg-black">
-                <img
+                <Image
                   src="/assets/Media/people_of_wayanad_shri_rahul_gandhi_1.jpg"
+                  alt="blog image"
                   width={400}
                   height={400}
                 />
@@ -169,8 +173,9 @@ export default function Media() {
             </div>
             <div>
               <div className="aspect-video bg-black">
-                <img
+                <Image
                   src="/assets/Media/people_of_wayanad_shri_rahul_gandhi_1.jpg"
+                  alt="blog image"
                   width={400}
                   height={400}
                 />
@@ -182,8 +187,9 @@ export default function Media() {
             </div>
             <div>
               <div className="aspect-video bg-black">
-                <img
+                <Image
                   src="/assets/Media/people_of_wayanad_shri_rahul_gandhi_1.jpg"
+                  alt="blog image"
                   width={400}
                   height={400}
                 />

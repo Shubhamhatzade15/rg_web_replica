@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import { useState } from "react";
-import ReactSimplyCarousel from "react-simply-carousel";
 import Hero from "./_components/LandingPage/Hero/Hero";
 import Video from "./_components/LandingPage/Video/Video";
 import Form from "./_components/LandingPage/Form/Form";
