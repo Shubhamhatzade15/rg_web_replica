@@ -5,7 +5,7 @@ import "./Hero.css"
 export default function Hero() {
   return (
     <div>
-      <div className="bg-gray-300 w-full aspect-[3/1] relative">
+      <div className="bg-gray-300 w-full aspect-video md:aspect-[3/1] relative">
         <Image
           src="/assets/LandingPage/Amethi-banner-home.jpg"
           alt="Hero image"
