@@ -24,7 +24,7 @@ const states = () => {
             />
             <Link
               href="/constituency/wayanad"
-              className="text-[16px] md:text-[20px] lg:text-[25px] tracking-tighter underline mt-10 "
+              className="text-[16px] md:text-[20px] lg:text-[25px] tracking-tighter underline mt-10 hover:text-gray-500 "
             >
               Wayanad
             </Link>
@@ -38,7 +38,7 @@ const states = () => {
             />
             <Link
               href="/constituency/amethi"
-              className="text-[16px] md:text-[20px] lg:text-[25px] tracking-tighter underline mt-10 "
+              className="text-[16px] md:text-[20px] lg:text-[25px] tracking-tighter underline mt-10 hover:text-gray-500"
             >
               Amethi
             </Link>
