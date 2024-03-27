@@ -40,7 +40,7 @@ const Navbar = () => {
       title: "Media",
       link: "/media",
     },
-    { 
+    {
       id: 6,
       title: "Busting Myths",
       link: "/busting-myths",
@@ -76,24 +76,27 @@ const Navbar = () => {
           </li>
         ))}
         <li key={7} className="nav-links cursor-pointer uppercase text-[#666] ">
-          <Dropdown text="RG on Social Media" links={[
-            {
-              title: "Facebook",
-              link: "#",
-            },
-            {
-              title: "Twitter",
-              link: "#",
-            },
-            {
-              title: "Instagram",
-              link: "#",
-            },
-            {
-              title: "Youtube",
-              link: "#",
-            },
-          ]} />
+          <Dropdown
+            text="RG on Social Media"
+            links={[
+              {
+                title: "Facebook",
+                link: "#",
+              },
+              {
+                title: "Twitter",
+                link: "#",
+              },
+              {
+                title: "Instagram",
+                link: "#",
+              },
+              {
+                title: "Youtube",
+                link: "#",
+              },
+            ]}
+          />
         </li>
         <li>
           <div className="uppercase bg-[#337ab7] text-white order-1">
@@ -116,13 +119,13 @@ const Navbar = () => {
 
       <div
         onClick={() => setNav(!nav)}
-        className="cursor-pointer p-2 bg-[#337ab7] text-white z-10 text-gray-500 md:hidden order-2"
+        className="cursor-pointer p-2 bg-[#337ab7] text-white z-10 text-gray-500 md:hidden order-2 z-50"
       >
         {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
       </div>
 
       {nav && (
-        <ul className="flex flex-col justify-center absolute top-0 left-0 w-full h-screen bg-white text-gray-500 text-xl uppercase">
+        <ul className="flex flex-col justify-center absolute top-0 left-0 z-50 w-full h-screen bg-white text-gray-500 text-xl uppercase">
           {links.map(({ id, link, title }) => (
             <li key={id} className="px-4 cursor-pointer py-6">
               <Link onClick={() => setNav(!nav)} href={link}>
@@ -131,7 +134,27 @@ const Navbar = () => {
             </li>
           ))}
           <li key={7} className="px-4 cursor-pointer text-[#666] py-6">
-            RG on Social Media <VscTriangleDown className="inline" />
+            <Dropdown
+              text="RG on Social Media"
+              links={[
+                {
+                  title: "Facebook",
+                  link: "#",
+                },
+                {
+                  title: "Twitter",
+                  link: "#",
+                },
+                {
+                  title: "Instagram",
+                  link: "#",
+                },
+                {
+                  title: "Youtube",
+                  link: "#",
+                },
+              ]}
+            />
           </li>
         </ul>
       )}
