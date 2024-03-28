@@ -8,15 +8,14 @@ import { FaGooglePlusSquare } from "react-icons/fa";
 const page = () => {
   return (
     <div className="">
-
       <div className="bg-white">
-      <Image
-        src="/assets/Rahul.jpg"
-        alt="Vercel Logo"
-        width={1980}
-        height={1223}
-        className=""
-      />
+        <Image
+          src="/assets/Rahul.jpg"
+          alt="Vercel Logo"
+          width={1980}
+          height={1223}
+          className=""
+        />
         <div className="bg-white p-80 pt-10 z-0">
           <div className="flex items-center justify-between">
             <h1 className="text-4xl text-slate-900">About Rahul Gandhi</h1>
@@ -128,7 +127,6 @@ const page = () => {
               his quest for truth, peace &amp; harmony for the people of India.
             </p>
           </div>
-         
         </div>
       </div>
     </div>

@@ -19,11 +19,11 @@ export default function Lists() {
   return (
     <div className={mons.className}>
       <div className="px-6 md:px-10 lg:px-20 xl:px-32 my-10 md:my-20">
-        <ul className="grid grid-cols-1">
+        <ul className="grid grid-cols-1 text-[#337ab7]">
           {listArray.map((item, index) => (
             <li
               key={index}
-              className="hvr-shutter-out-vertical border-b-2 py-3 md:py-4 lg:py-5"
+              className="hvr-shutter-out-vertical border-b py-3 md:py-4 lg:py-5 hover:text-white border-[#337ab7]"
             >
               <a
                 href={item.link}
