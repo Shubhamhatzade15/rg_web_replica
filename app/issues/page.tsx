@@ -43,7 +43,10 @@ export default function page() {
       <div className="p-4 px-6 lg:px-60 md:px-20 text-[#337ab7]">
         {issues.map((issue, index) => {
           return (
-            <div key={index+1} className="uppercase block py-4 px-2 border-b-2 border-[#337ab7] w-full group relative cursor-pointer">
+            <div
+              key={index + 1}
+              className="uppercase block py-4 px-2 border-b-2 border-[#337ab7] w-full group relative cursor-pointer"
+            >
               <a
                 href={issue.link}
                 className="block w-full h-full group-hover:text-white transition-all duration-800"

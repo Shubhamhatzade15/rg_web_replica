@@ -6,7 +6,6 @@ import Hero from "./hero";
 const page = () => {
   return (
     <div className="">
-      
       <Hero />
       <Content />
     </div>
