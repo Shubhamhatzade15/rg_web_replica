@@ -8,7 +8,7 @@ import { FaGooglePlusSquare } from "react-icons/fa";
 const Content = () => {
   return (
     <div className=''>
-         <div className="bg-white p-10 md:p-80 pt-10">
+         <div className="bg-white p-10 md:p-80 md:pt-10">
           <div className="flex items-center justify-between">
             <h1 className="md:text-4xl text-lg text-slate-900">About Rahul Gandhi</h1>
             <div className="flex space-x-2 text-slate-400">
