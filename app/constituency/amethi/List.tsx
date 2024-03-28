@@ -39,7 +39,7 @@ const listArray = [
 export default function List() {
   return (
     <div className={mons.className}>
-      <div className="px-6 md:px-10 lg:px-20 xl:px-32 my-10 md:my-20">
+      {/* <div className="px-6 md:px-10 lg:px-20 xl:px-32 my-10 md:my-20">
         <ul className="grid grid-cols-1 text-[#337ab7]">
           {listArray.map((item, index) => (
             <li
@@ -48,13 +48,30 @@ export default function List() {
             >
               <a
                 href={item.link}
-                className="uppercase px-3 md:px-5 text-sm md:text-base lg:text-lg"
+                className="w-full h-full uppercase px-3 md:px-5 text-sm md:text-base lg:text-lg"
               >
                 {item.title}
               </a>
             </li>
           ))}
         </ul>
+      </div> */}
+      <div className="p-4 px-6 lg:px-60 md:px-20 text-[#337ab7]">
+        {listArray.map((item, index) => {
+          return (
+            <div
+              key={index + 1}
+              className="hvr-shutter-out-vertical uppercase block py-4 px-2 border-b border-[#337ab7] w-full group relative cursor-pointer"
+            >
+              <a
+                href={item.link}
+                className="block w-full h-full group-hover:text-white"
+              >
+                {item.title}
+              </a>
+            </div>
+          );
+        })}
       </div>
     </div>
   );
