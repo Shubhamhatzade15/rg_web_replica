@@ -52,7 +52,9 @@ function content() {
     >
       <div className="px-4 md:px-10">
         <div className="flex flex-col justify-start items-start md:flex-row md:justify-between md:items-center">
-          <div className="order-2 md:order-1 text-3xl">About Wayanad</div>
+          <div className="order-2 md:order-1 text-3xl text-[#032B5B]">
+            About Wayanad
+          </div>
           <div className="order-1 md:order-2 grid grid-cols-4 gap-2 text-xl">
             <div className="flex justify-center items-center size-6 md:size-10 bg-[#4F9DD8] text-white">
               <RiFacebookFill />
@@ -142,7 +144,7 @@ function content() {
         </div>
 
         <div className="mt-5">
-          <p className="underline uppercase font-medium text-2xl">
+          <p className="underline uppercase font-medium text-2xl text-[#032B5B]">
             Summary of Initiatives-
           </p>
           <ul
@@ -155,7 +157,9 @@ function content() {
         </div>
 
         <div className="mt-5">
-          <p className="underline font-medium text-2xl">COVID Response</p>
+          <p className="underline font-medium text-2xl text-[#032B5B]">
+            COVID Response
+          </p>
           <ul
             className={`list-circle mt-3 mx-5 font-light text-justify text-sm md:text-base ${roboto_f.className}`}
           >
