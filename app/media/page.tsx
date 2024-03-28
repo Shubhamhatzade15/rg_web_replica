@@ -48,7 +48,7 @@ export default function Media() {
               <div className="aspect-video bg-black">
                 <video className="h-full w-full" controls>
                   <source
-                    src="/assets/LandingPage/video (2160p).mp4"
+                    src="/assets/LandingPage/video.mp4"
                     type="video/mp4"
                   />
                 </video>
@@ -59,7 +59,7 @@ export default function Media() {
               <div className="aspect-video bg-black">
                 <video className="h-full w-full" controls>
                   <source
-                    src="/assets/LandingPage/video (2160p).mp4"
+                    src="/assets/LandingPage/video.mp4"
                     type="video/mp4"
                   />
                 </video>
@@ -70,7 +70,7 @@ export default function Media() {
               <div className="aspect-video bg-black">
                 <video className="h-full w-full" controls>
                   <source
-                    src="/assets/LandingPage/video (2160p).mp4"
+                    src="/assets/LandingPage/video.mp4"
                     type="video/mp4"
                   />
                 </video>
@@ -81,7 +81,7 @@ export default function Media() {
               <div className="aspect-video bg-black">
                 <video className="h-full w-full" controls>
                   <source
-                    src="/assets/LandingPage/video (2160p).mp4"
+                    src="/assets/LandingPage/video.mp4"
                     type="video/mp4"
                   />
                 </video>
@@ -92,7 +92,7 @@ export default function Media() {
               <div className="aspect-video bg-black">
                 <video className="h-full w-full" controls>
                   <source
-                    src="/assets/LandingPage/video (2160p).mp4"
+                    src="/assets/LandingPage/video.mp4"
                     type="video/mp4"
                   />
                 </video>
@@ -103,7 +103,7 @@ export default function Media() {
               <div className="aspect-video bg-black">
                 <video className="h-full w-full" controls>
                   <source
-                    src="/assets/LandingPage/video (2160p).mp4"
+                    src="/assets/LandingPage/video.mp4"
                     type="video/mp4"
                   />
                 </video>

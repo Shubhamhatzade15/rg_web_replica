@@ -7,7 +7,7 @@ export default function Video() {
         <h2 className="text-6xl text-[#337ab7] font-bold">Rahul Gandhi Speaks</h2>
         <div className="bg-gray-300 aspect-video md:w-3/4 mx-auto my-4">
           <video className="h-full w-full" controls>
-            <source src="/assets/LandingPage/video (2160p).mp4" type="video/mp4"
+            <source src="/assets/LandingPage/video.mp4" type="video/mp4"
              />
           </video>
         </div>
