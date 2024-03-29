@@ -92,13 +92,13 @@ export default function page() {
               <br />
               <br />
               Rohith Vemula, a Dalit PhD scholar in Hyderabad University, was
-              driven to suicide, for speaking against a world, where "the value
-              of a man was reduced to his immediate identity and nearest
+              driven to suicide, for speaking against a world, where &quot;the
+              value of a man was reduced to his immediate identity and nearest
               possibility - to a vote, to a number, to a thing. Never was a man
-              treated as a mind." I can only quote Rohit Vemula&apos;s vision of
-              a world where human beings can be truly valued "as glorious things
-              made up of stardust, in every field, in studies, in streets, in
-              life and in death".
+              treated as a mind.&quot; I can only quote Rohit Vemula&apos;s
+              vision of a world where human beings can be truly valued &quot;as
+              glorious things made up of stardust, in every field, in studies,
+              in streets, in life and in death&quot;.
               <br />
               <br />
               In a hierarchical context, achieving equality takes an extra

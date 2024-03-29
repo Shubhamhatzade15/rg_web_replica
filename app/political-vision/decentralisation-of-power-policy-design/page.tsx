@@ -88,9 +88,9 @@ export default function page() {
               were a rural country, locked in our villages, but we have
               transformed using democratic principles. 70 years ago in India you
               would have seen a rigid caste hierarchy, with no mobility, people
-              couldn't aspire to do more, they were stuck. This is what India
-              has been fighting and what we have been successful in beating -
-              not entirely but in decent measure. China saw a similar
+              couldn&apos;t aspire to do more, they were stuck. This is what
+              India has been fighting and what we have been successful in
+              beating - not entirely but in decent measure. China saw a similar
               transformation, however, while the ideas was the same, the
               methodology was vastly different. Our transformation was
               decentralised, anybody can do what they want, anybody can travel
