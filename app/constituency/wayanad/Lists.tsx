@@ -40,11 +40,11 @@ export default function Lists() {
           return (
             <div
               key={index + 1}
-              className="hvr-shutter-out-vertical uppercase block py-4 px-2 border-b border-[#337ab7] w-full group relative cursor-pointer"
+              className="hvr-shutter-out-vertical uppercase block border-b border-[#337ab7] w-full group relative cursor-pointer"
             >
               <a
                 href={item.link}
-                className="block w-full h-full group-hover:text-white"
+                className="block w-full h-full py-4 px-2 group-hover:text-white"
               >
                 {item.title}
               </a>
