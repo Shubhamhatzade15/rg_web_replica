@@ -119,7 +119,7 @@ const Navbar = () => {
 
       <div
         onClick={() => setNav(!nav)}
-        className="cursor-pointer p-2 bg-[#337ab7] text-white z-10 text-gray-500 md:hidden order-2 z-50"
+        className="cursor-pointer p-2 bg-[#337ab7] text-gray-500 md:hidden order-2 z-50"
       >
         {nav ? <FaTimes className="text-xl" /> : <FaBars className="text-xl" />}
       </div>
