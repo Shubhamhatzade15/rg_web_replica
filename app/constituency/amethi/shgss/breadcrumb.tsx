@@ -24,7 +24,7 @@ function breadcrumb() {
         </li>
         <li className="flex items-center antialiased">
           <a href="#" className=" cursor-text ">
-            Industry
+            Self-Help Groups
           </a>
         </li>
       </ol>

@@ -11,7 +11,7 @@ const hero = () => {
         src={banner}
         width={1920}
         height={717}
-        alt="Amethi-industry 1920 x 717"
+        alt="Shgss 1920 x 717"
         className="block h-auto w-full"
       />
     </div>
