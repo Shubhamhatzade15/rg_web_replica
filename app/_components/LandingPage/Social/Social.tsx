@@ -14,7 +14,6 @@ export default function Social() {
       ></iframe>
       <iframe
         id="twitter-widget-0"
-        allowTransparency={true}
         allowFullScreen={true}
         className=""
         width="340"

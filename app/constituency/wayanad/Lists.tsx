@@ -18,7 +18,7 @@ const listArray = [
 export default function Lists() {
   return (
     <div className={mons.className}>
-      <div className="px-6 md:px-10 lg:px-20 xl:px-32 my-10 md:my-20">
+      {/* <div className="px-6 md:px-10 lg:px-20 xl:px-32 my-10 md:my-20">
         <ul className="grid grid-cols-1 text-[#337ab7]">
           {listArray.map((item, index) => (
             <li
@@ -34,6 +34,23 @@ export default function Lists() {
             </li>
           ))}
         </ul>
+      </div> */}
+      <div className="p-4 px-6 lg:px-60 md:px-20 text-[#337ab7]">
+        {listArray.map((item, index) => {
+          return (
+            <div
+              key={index + 1}
+              className="hvr-shutter-out-vertical uppercase block border-b border-[#337ab7] w-full group relative cursor-pointer"
+            >
+              <a
+                href={item.link}
+                className="block w-full h-full py-4 px-2 group-hover:text-white"
+              >
+                {item.title}
+              </a>
+            </div>
+          );
+        })}
       </div>
     </div>
   );

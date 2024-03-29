@@ -2,7 +2,7 @@ import React from "react";
 
 import Image from "next/image";
 
-const banner = "/constituency/amethi-healthcare/Healthcare-banner.png";
+const banner = "/healthcare/Health-About-Amethi.jpg";
 
 const hero = () => {
   return (
@@ -11,8 +11,8 @@ const hero = () => {
         src={banner}
         width={1920}
         height={717}
-        alt="banner 1920 x 717"
-        className="block h-auto max-w-full"
+        alt="Shgss 1920 x 717"
+        className="block h-auto w-full"
       />
     </div>
   );

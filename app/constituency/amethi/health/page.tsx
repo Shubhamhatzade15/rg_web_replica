@@ -1,11 +1,7 @@
-import React from "react";
-
 import Hero from "./hero";
 import Content from "./content";
 
-// import Details from "./details";
-
-function page() {
+export default function page() {
   return (
     <div>
       <Hero />
@@ -13,5 +9,3 @@ function page() {
     </div>
   );
 }
-
-export default page;

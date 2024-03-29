@@ -47,6 +47,7 @@ const Navbar = () => {
     },
   ];
 
+
   return (
     <div className="flex justify-between items-center gap-x-4 md:gap-x-8 md:flex-wrap w-full px-4 md:px-10  pt-4 md:pt-10 pb-4 nav">
       <div>
@@ -65,16 +66,24 @@ const Navbar = () => {
       </div>
 
       <ul className="hidden md:flex items-center flex-wrap gap-6 my-4 ">
-        {links.map(({ id, link, title }) => (
-          <li
-            key={id}
-            className={`${
-              pathname === link ? "active" : ""
-            } nav-links cursor-pointer uppercase text-[#666]`}
-          >
-            <Link href={link}>{title}</Link>
-          </li>
-        ))}
+        {links.map(({ id, link, title }) => {
+          const pathSegments = pathname.split("/");
+          const linkSegments = link.split("/");
+          const isActive = linkSegments.every(
+            (seg, i) => pathSegments[i] === seg
+          );
+
+          return (
+            <li
+              key={id}
+              className={`${
+                isActive ? "active" : ""
+              } nav-links cursor-pointer uppercase text-[#666]`}
+            >
+              <Link href={link}>{title}</Link>
+            </li>
+          );
+        })}
         <li key={7} className="nav-links cursor-pointer uppercase text-[#666] ">
           <Dropdown
             text="RG on Social Media"
@@ -119,13 +128,13 @@ const Navbar = () => {
 
       <div
         onClick={() => setNav(!nav)}
-        className="cursor-pointer p-2 bg-[#337ab7] text-white z-10 text-gray-500 md:hidden order-2 z-50"
+        className="cursor-pointer p-2 bg-[#337ab7] text-gray-500 md:hidden order-2 z-50 text-white"
       >
         {nav ? <FaTimes className="text-xl" /> : <FaBars className="text-xl" />}
       </div>
 
       {nav && (
-        <ul className="flex flex-col justify-center absolute top-0 left-0 z-50 w-full h-screen bg-white text-gray-500 text-xl uppercase">
+        <ul className="flex flex-col pt-20 absolute top-0 left-0 z-50 w-full h-screen bg-white text-gray-500 text-xl uppercase">
           {links.map(({ id, link, title }) => (
             <li key={id} className="px-4 cursor-pointer py-6">
               <Link onClick={() => setNav(!nav)} href={link}>
