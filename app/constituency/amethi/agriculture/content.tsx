@@ -16,9 +16,9 @@ import { Montserrat, Roboto_Flex } from "next/font/google";
 const mons = Montserrat({ subsets: ["latin"] });
 const roboto_f = Roboto_Flex({ subsets: ["latin"] });
 
-const Agri1 = "/amethi-agri/Agriculture1.jpg";
-const Agri2 = "/amethi-agri/Agriculture2.jpg";
-const Agri3 = "/amethi-agri/Agriculture3.jpg";
+const Agri1 = "/amethi-agri/agriculture1.jpg";
+const Agri2 = "/amethi-agri/agriculture2.jpg";
+const Agri3 = "/amethi-agri/agriculture3.jpg";
 const sorry = "/amethi-agri/sorry.png";
 
 function content() {

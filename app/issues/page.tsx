@@ -5,11 +5,11 @@ export default function page() {
   const issues = [
     {
       title: "Jobs and MSME",
-      link: "/",
+      link: "/constituency/amethi/industry",
     },
     {
       title: "Agriculture",
-      link: "/",
+      link: "/constituency/amethi/agriculture",
     },
     {
       title: "Land Aquistion Bill",
@@ -27,6 +27,31 @@ export default function page() {
       title: "Net Neutrality",
       link: "/",
     },
+    {
+      title: "Dalit Rights",
+      link: "/",
+    },
+    {
+      title: "Adivasi Rights",
+      link: "/",
+    },
+    {
+      title: "National Rural Employment Guarantee Act",
+      link: "/",
+    },
+    {
+      title: "Goods and Services Tax",
+      link: "/",
+    },
+    {
+      title: "Decentralisation of Power",
+      link: "/",
+    },
+    {
+      title: "Democratissation of IYC/NSUI",
+      link: "/",
+    },
+
   ];
 
   return (
@@ -49,11 +74,11 @@ export default function page() {
             >
               <a
                 href={issue.link}
-                className="block w-full h-full group-hover:text-white transition-all duration-800"
+                className="block w-full h-full group-hover:text-white transition-all duration-500"
               >
                 {issue.title}
               </a>
-              <div className="h-0 w-full opacity-0 group-hover:h-full group-hover:opacity-100 bg-[#337ab7] absolute top-1/2 group-hover:top-0 left-0 transition-all duration-800 z-[-1]"></div>
+              <div className="h-0 w-full opacity-0 group-hover:h-full group-hover:opacity-100 bg-[#337ab7] absolute top-1/2 group-hover:top-0 left-0 transition-all duration-500 z-[-1]"></div>
             </div>
           );
         })}

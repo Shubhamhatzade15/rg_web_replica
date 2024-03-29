@@ -151,7 +151,7 @@ export default function AboutAmethi() {
             <p>Rahul Gandhi interacts with the farmers of Amethi</p>
 
             <p className="mt-10">
-              Due to Rahul Gandhi’s unfaltering endeavours to provide world
+              Due to Rahul Gandhi&apos;s unfaltering endeavours to provide world
               class health care facilities to the people, the health sector in
               Amethi has also witnessed substantial progress during his tenure.
               The Congress President has always believed in reaching out to the
@@ -167,7 +167,7 @@ export default function AboutAmethi() {
               bringing into its fold hundreds of women who work together in
               areas of financial inclusion, health, education etc. Along with
               agriculture, industrialisation in Amethi has also thrived. Rahul
-              Gandhi’s vision for his constituency entails a mixed model of
+              Gandhi&apos;s vision for his constituency entails a mixed model of
               development wherein along with prospering agriculture, the youth
               are also provided with enough job opportunities. To this end, many
               heavy as well as small and medium sized industries have been set
@@ -183,11 +183,11 @@ export default function AboutAmethi() {
               public infrastructure- a new railway line connecting
               Unchahar-Salon-Amethi has been stalled, the IIIT functioning for
               11 years has been closed down, the construction of 2 new Kendriya
-              Vidyalayas, which would've churned out five batches of students by
+              Vidyalayas, which would&apos;ve churned out five batches of students by
               now, is being delayed for over 5 years, Mega Food Park in
               Jagdishpur has been cancelled and the Hindustan Paper Mills which
               promised to provide job opportunities for more than 200 people has
-              been shifted out of Amethi to Maharashtra. Rahul Gandhi’s
+              been shifted out of Amethi to Maharashtra. Rahul Gandhi&apos;s
               relationship with Amethi is not that of a leader-voter- it is
               strongly rooted in several decades of shared history. It is firmly
               entrenched in the close association and the deep bond he shares
