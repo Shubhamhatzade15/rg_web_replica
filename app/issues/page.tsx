@@ -53,30 +53,6 @@ export default function page() {
       title: "DEMOCRATISATION OF ICU/NSUI",
       link: "/political-vision/democratisation-of-iyc-nsui",
     },
-    {
-      title: "Dalit Rights",
-      link: "/political-vision/dalit-rights",
-    },
-    {
-      title: "Adivasi Rights",
-      link: "/political-vision/adivasi-rights",
-    },
-    {
-      title: "National Rural Employment Guarantee Act",
-      link: "/political-vision/national-rural-employment-guarantee-act",
-    },
-    {
-      title: "Goods and Services Tax",
-      link: "/political-vision/goods-and-services-tax",
-    },
-    {
-      title: "Decentralisation of Power",
-      link: "/political-vision/decentralisation-of-power-policy-design",
-    },
-    {
-      title: "Democratissation of IYC/NSUI",
-      link: "/political-vision/democratisation-of-iyc-nsui",
-    },
   ];
 
   return (
