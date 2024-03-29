@@ -301,7 +301,7 @@ function content() {
               <p
                 className={`mt-5 text-justify text-sm md:text-base ${roboto_f.className}`}
               >
-                RGNAU set up in 2013 by Rahul Gandhi, is India's first aviation
+                RGNAU set up in 2013 by Rahul Gandhi, is India&apos;s first aviation
                 university. It facilitates and promotes aviation studies,
                 teaching, training and research. The university will offer a
                 number of courses aimed at bridging the skill gap within the
@@ -393,7 +393,7 @@ function content() {
                 investment to provide training to paramilitary forces with
                 modern facilities and training centres. The centre has the
                 capacity to train nearly 1,000 fresh recruits who join the
-                country's largest central security force as constables. The
+                country&apos;s largest central security force as constables. The
                 setting up of the training centre in Amethi, which is amongst
                 the only eight CRPF training centres across the country, has
                 encouraged more youth of Amethi to join the police force.
