@@ -17,7 +17,7 @@ export default function Hero() {
     <div>
       <div className="bg-gray-300 w-full aspect-video md:aspect-[3/1] relative">
         <Image
-          src="/assets/LandingPage/Amethi-banner-home.jpg"
+          src="/assets/LandingPage/hero_new.jpg"
           alt="Hero image"
           width={2000}
           height={2000}
@@ -56,25 +56,8 @@ export default function Hero() {
           and compassion, has made an indelible impact on the Bhandara-Gondiya
           constituency. Armed with a distinguished educational background,
           including an MBBS and MD, he not only possesses exceptional medical
-          expertise but also exemplifies unwavering dedication to his
-          profession. Dr. Padole&quot;s relentless commitment to serving his
-          community is evident through his tireless efforts in ensuring
-          equitable access to high-quality healthcare for all residents. His
-          exemplary leadership qualities shine through his active engagement in
-          social initiatives and his notable participation in the Bhandara
-          District Cooperative Bank elections. Dr. Padole&quot;s resilience in the
-          face of challenges serves as an inspiration to all, demonstrating his
-          unwavering determination to overcome obstacles and bring about
-          positive change. With genuine empathy, he extends his compassion to
-          the underprivileged and vulnerable, leaving an enduring impact on
-          their lives. Guided by a visionary outlook, Dr. Prashant Yadavrao
-          Padole envisions a future characterized by progress, unity, and equal
-          opportunities for all. His remarkable journey exemplifies the
-          transformative power of selfless service, making him an extraordinary
-          role model for individuals driven by purpose and a genuine desire to
-          make a difference. The Bhandara-Gondiya constituency is indeed
-          fortunate to have such an exceptional leader steering them towards a
-          brighter and more compassionate future.
+          expertise but also exemplifies unwavering dedication
+          to his profession.
         </p>
         <a href="/about" className="text-blue-500">
           Read More

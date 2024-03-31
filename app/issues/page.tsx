@@ -51,7 +51,7 @@ export default function page() {
     <div className="">
       <div className="bg-gray-300 w-full aspect-video md:aspect-[3/1] relative">
         <Image
-          src="/assets/Issues/issue_banner.jpg"
+          src="/assets/Issues/issues_bg.jpg"
           alt="Hero image"
           width={2000}
           height={2000}

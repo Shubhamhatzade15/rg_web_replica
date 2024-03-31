@@ -219,7 +219,7 @@ export default function Media() {
     <div>
       <div className="bg-gray-300 w-full aspect-video md:aspect-[3/1] relative">
         <Image
-          src="/assets/Media/media-Banner.jpg"
+          src="/media/media_bg.jpg"
           alt="Hero image"
           width={2000}
           height={2000}
@@ -252,7 +252,7 @@ export default function Media() {
         {tab === 0 && (
           <div className="py-8 grid grid-cols-1 md:grid-cols-3 gap-8">
             {videos.map((video, index) => (
-              <div>
+              <div key={index}>
                 <div className="aspect-video bg-black">
                   <video className="h-full w-full" controls>
                     <source
@@ -269,7 +269,7 @@ export default function Media() {
         {tab === 1 && (
           <div className="py-8 grid grid-cols-1 md:grid-cols-3 gap-8">
             {images.map((image, index) => (
-              <div>
+              <div key={index}>
                 <div className="aspect-[4/3] bg-gray-300">
                   <Image
                     src={image.src}

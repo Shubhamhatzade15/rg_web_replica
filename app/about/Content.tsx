@@ -12,12 +12,6 @@ const Content = () => {
           <h1 className="md:text-4xl text-lg text-slate-900">
             About Dr. Prashant Padole
           </h1>
-          <div className="flex space-x-2 text-slate-400">
-            <ImFacebook2 className="md:text-2xl text-xl" />
-            <FaTwitterSquare className="md:text-2xl text-xl" />
-            <FaLinkedin className="md:text-2xl text-xl" />
-            <FaGooglePlusSquare className="md:text-2xl text-xl" />
-          </div>
         </div>
         <br />
         <div className="md:text-sm text-xs text-justify ">

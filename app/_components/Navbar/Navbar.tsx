@@ -59,8 +59,7 @@ const Navbar = () => {
                 />
               </div>
               <div className="flex flex-col justify-center ml-2 uppercase">
-                <div className="text-lg md:text-xl font-bold">Dr. Prashant</div>
-                <div className="text-lg md:text-xl font-bold tracking-widest">Padole</div>
+                <div className="text-base md:text-xl font-bold">Dr. Prashant Padole</div>
               </div>
             </div>
           </a>
@@ -100,7 +99,7 @@ const Navbar = () => {
               },
               {
                 title: "Instagram",
-                link: "https://www.instagram.com/dr_prashant_padole?igsh=MWlrM3p0amViYjY2aw%3D%3D",
+                link: "https://www.instagram.com/drprashantpadole?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
               },
             ]}
           />
@@ -154,7 +153,7 @@ const Navbar = () => {
                 },
                 {
                   title: "Instagram",
-                  link: "https://www.instagram.com/dr_prashant_padole?igsh=MWlrM3p0amViYjY2aw%3D%3D",
+                  link: "https://www.instagram.com/drprashantpadole?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
                 },
               ]}
             />

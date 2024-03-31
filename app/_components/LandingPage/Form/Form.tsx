@@ -8,19 +8,10 @@ export default function Form() {
         <form action="" className='grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4 my-4'>
             <input type="text" className="block bg-transparent border-b-2 border-black focus:border-[#337ab7] outline-none" placeholder='First Name*' required />
             <input type="text" className="bg-transparent border-b-2 border-black focus:border-[#337ab7] outline-none" placeholder='Last Name*' required />
-            <div>
-                <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" className="bg-transparent border-b-2 border-black focus:border-[#337ab7] outline-none" placeholder='Phone Number*' required />
-                <button className='rounded-lg border-2 bg-white p-2 mx-2' type='button'>Verify</button>
-            </div> 
-            <input type="number" className="bg-transparent border-b-2 border-black focus:border-[#337ab7] outline-none" placeholder='Enter OTP*' required />
+            <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" className="bg-transparent border-b-2 border-black focus:border-[#337ab7] outline-none" placeholder='Phone Number*' required />
             <input type="email" className="bg-transparent border-b-2 border-black focus:border-[#337ab7] outline-none" placeholder='Enter Email*' required />
             <input type="text" className="bg-transparent border-b-2 border-black focus:border-[#337ab7] outline-none" placeholder='Pin Code*' required />
-            <input type="text" className="bg-transparent border-b-2 border-black focus:border-[#337ab7] outline-none md:col-start-1 md:col-end-3" placeholder='What is on your mind?' />
-            <div>
-                <input type="checkbox" />
-                <label htmlFor=""> Yes, I would like to receive messages from Rahul Gandhi</label>
-            </div>
-            <button type='submit' className="uppercase px-4 py-2 bg-[#337ab7] w-fit place-self-end text-white">Submit</button>
+            <button type='submit' className="uppercase px-4 py-2 bg-[#337ab7] w-fit place-self-center text-white md:col-start-1 md:col-end-3">Submit</button>
         </form>     
     </div>
   )
