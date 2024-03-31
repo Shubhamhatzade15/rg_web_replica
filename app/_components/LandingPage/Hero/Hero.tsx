@@ -9,9 +9,9 @@ export default function Hero() {
 
   useEffect(() => {
     if (emblaApi) {
-      console.log(emblaApi.slideNodes()) // Access API
+      console.log(emblaApi.slideNodes()); // Access API
     }
-  }, [emblaApi])
+  }, [emblaApi]);
 
   return (
     <div>
@@ -30,12 +30,15 @@ export default function Hero() {
           <div className="embla__container gap-2 items-center">
             <div className="embla__slide">
               <p>
-                &quot;If one accepts the notion that ideas capture people then the only possible response to a person infected by a bad idea, is love and compassion.&quot;
+                &quot;If one accepts the notion that ideas capture people then
+                the only possible response to a person infected by a bad idea,
+                is love and compassion.&quot;
               </p>
             </div>
             <div className="embla__slide">
               <p>
-                &quot;If opportunity is limited to a few, our growth will be a fraction of our capability as a nation.&quot;
+                &quot;If opportunity is limited to a few, our growth will be a
+                fraction of our capability as a nation.&quot;
               </p>
             </div>
             <div className="embla__slide">
@@ -49,17 +52,31 @@ export default function Hero() {
 
       <div className="p-4 md:px-20 py-10 bg-[#dee8f0]">
         <p>
-          Rahul Gandhi spent his early childhood between Delhi, the political
-          center of India, and Dehradun, a town nestled in the valley between
-          the Himalayas and Shivaliks. He began his undergraduate career at
-          Delhi&quot;s St. Stephen&quot;s College before moving to Harvard
-          University in the USA. In his second year, Rahul transferred to
-          Rollins College in Florida due to security threats following his
-          father&quot;s, the late Prime Minister Rajiv Gandhi, assassination.
-          Rahul Gandhi graduated with a Bachelor&quot;s degree in 1994. The year
-          after, he obtained his M. Phil from Trinity College, Cambridge.
+          Dr. Prashant Yadavrao Padole, an eminent figure of unwavering strength
+          and compassion, has made an indelible impact on the Bhandara-Gondiya
+          constituency. Armed with a distinguished educational background,
+          including an MBBS and MD, he not only possesses exceptional medical
+          expertise but also exemplifies unwavering dedication to his
+          profession. Dr. Padole&quot;s relentless commitment to serving his
+          community is evident through his tireless efforts in ensuring
+          equitable access to high-quality healthcare for all residents. His
+          exemplary leadership qualities shine through his active engagement in
+          social initiatives and his notable participation in the Bhandara
+          District Cooperative Bank elections. Dr. Padole&quot;s resilience in the
+          face of challenges serves as an inspiration to all, demonstrating his
+          unwavering determination to overcome obstacles and bring about
+          positive change. With genuine empathy, he extends his compassion to
+          the underprivileged and vulnerable, leaving an enduring impact on
+          their lives. Guided by a visionary outlook, Dr. Prashant Yadavrao
+          Padole envisions a future characterized by progress, unity, and equal
+          opportunities for all. His remarkable journey exemplifies the
+          transformative power of selfless service, making him an extraordinary
+          role model for individuals driven by purpose and a genuine desire to
+          make a difference. The Bhandara-Gondiya constituency is indeed
+          fortunate to have such an exceptional leader steering them towards a
+          brighter and more compassionate future.
         </p>
-        <a href="/" className="text-blue-500">
+        <a href="/about" className="text-blue-500">
           Read More
         </a>
       </div>

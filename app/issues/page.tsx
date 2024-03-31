@@ -45,14 +45,6 @@ export default function page() {
       title: "GOODS AND SERVICE TAX",
       link: "/political-vision/goods-and-services-tax",
     },
-    {
-      title: "DECENTRALISATION OF POWER",
-      link: "/political-vision/decentralisation-of-power-policy-design",
-    },
-    {
-      title: "DEMOCRATISATION OF ICU/NSUI",
-      link: "/political-vision/democratisation-of-iyc-nsui",
-    },
   ];
 
   return (
