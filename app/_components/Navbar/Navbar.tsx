@@ -40,6 +40,11 @@ const Navbar = () => {
       title: "Media",
       link: "/media",
     },
+    {
+      id: 5,
+      title: "Assets",
+      link: "https://drive.google.com/drive/u/5/folders/18Te5JwlPz4V1bgFnbJA7vFj46Mrn5O81",
+    },
   ];
 
   return (
