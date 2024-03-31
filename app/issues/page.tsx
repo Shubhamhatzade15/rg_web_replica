@@ -58,6 +58,18 @@ export default function page() {
           className="object-cover w-full h-full"
         />
       </div>
+      <div className="p-4 px-6 lg:px-60 md:px-20">
+        <h1 className="text-4xl font-bold">Manifesto</h1>
+        <br />
+        
+        <Image
+          src="/assets/Issues/issues.jpg"
+          alt="Hero image"
+          width={2000}
+          height={2000}
+          className="object-cover w-[90%] h-full mx-auto"
+        />
+      </div>
       <div className="p-4 px-6 lg:px-60 md:px-20 text-[#337ab7]">
         {issues.map((issue, index) => {
           return (
