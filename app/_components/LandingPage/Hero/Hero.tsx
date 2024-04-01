@@ -1,19 +1,19 @@
 import Image from "next/image";
 import React, { useEffect } from "react";
 import "./Hero.css";
-import bgImage from "./background.png"
+import bgImage from "./background.png";
 
 export default function Hero() {
-
-
   return (
-    <div className="hero" style={{
-      backgroundImage: `url(${bgImage})`,
-      backgroundSize: "cover",
-      backgroundPosition: "center",
-      backgroundRepeat: "no-repeat",
-    
-    }}>
+    <div
+      className="hero"
+      style={{
+        backgroundImage: `url(${bgImage})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
       {/* <div className="bg-gray-300 w-full aspect-video md:aspect-[3/1] relative">
         <Image
           src="/assets/LandingPage/hero_new.jpg"
@@ -65,7 +65,7 @@ export default function Hero() {
       <div className="p-4 md:px-20 py-10 grid grid-cols-1 md:grid-cols-2">
         <div className="w-full">
           <Image
-            src="/assets/LandingPage/Padole.png"
+            src="/assets/LandingPage/Nana & Prashant.png"
             alt="Hero image"
             width={2000}
             height={2000}
@@ -74,50 +74,49 @@ export default function Hero() {
         </div>
         <div className="space-y-4">
           <div className="w-full">
-            <Image src="/assets/LandingPage/Slogan.png" alt="Hero image" width={500} height={500} className="object-contain max-h-[200px] h-full" />
+            <Image
+              src="/assets/LandingPage/Slogan.png"
+              alt="Hero image"
+              width={500}
+              height={500}
+              className="object-contain max-h-[200px] h-full"
+            />
           </div>
           <h3 className="text-3xl">Join Our Movement</h3>
-          <div>
-            <h4 className="text-xl font-bold">Name*</h4>
-            <div className="grid grid-cols-1 gap-2">
+          <form action="https://getform.io/f/pbqgkqyb" method="POST">
+              <h4 className="text-xl font-bold">Name*</h4>
+                <input
+                  type="text"
+                  className="w-full block border-2 p-2"
+                  placeholder="Name"
+                  name="name"
+                  required
+                />
+              <h4 className="text-xl font-bold">Email*</h4>
               <input
-                type="text"
-                className="border-2 p-2"
-                placeholder="Name"
-                name="name"
+                type="email"
+                className="w-full block border-2 p-2 w-full"
+                placeholder="Email"
+                name="email"
                 required
               />
-            </div>
-          </div>
+              <h4 className="text-xl font-bold">Phone Number*</h4>
+              <input
+                type="tel"
+                className="w-full block border-2 p-2 w-full"
+                placeholder="Phone Number"
+                name="phone"
+                required
+              />
 
-          <div>
-            <h4 className="text-xl font-bold">Email*</h4>
-            <input
-              type="email"
-              className="border-2 p-2 w-full"
-              placeholder="Email"
-              name="email"
-              required
-            />
-          </div>
-          <div>
-            <h4 className="text-xl font-bold">Phone Number*</h4>
-            <input
-              type="tel"
-              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" 
-              className="border-2 p-2 w-full"
-              placeholder="Phone Number"
-              name="phone"
-              required
-            />
-          </div>
-
-          <div>
-            <div className="grid grid-cols-1 place-items-center">
-              <button className="border-2 p-2 text-white bg-black uppercase w-full md:w-1/4">Submit</button>
-              
+            <div>
+              <div className="grid grid-cols-1 place-items-center">
+                <button className="border-2 p-2 text-white bg-black uppercase w-full md:w-1/4">
+                  Submit
+                </button>
+              </div>
             </div>
-          </div>
+          </form>
         </div>
       </div>
     </div>
