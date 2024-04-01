@@ -43,8 +43,8 @@ export default function Footer() {
             </span>
 
             <div className="flex space-x-2 text-center justify-center text-xs text-white">
-              <Link href="#"> Terms and Conditions </Link>
-              <Link href="#"> Privacy Policy </Link>
+              <Link href="terms&conditions"> Terms and Conditions </Link>
+              <Link href="privacypolicy"> Privacy Policy </Link>
             </div>
           </div>
         </footer>
