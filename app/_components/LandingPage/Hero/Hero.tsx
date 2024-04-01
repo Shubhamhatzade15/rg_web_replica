@@ -1,23 +1,22 @@
 import Image from "next/image";
 import React, { useEffect } from "react";
 import "./Hero.css";
-import useEmblaCarousel from "embla-carousel-react";
-import Autoplay from "embla-carousel-autoplay";
+import bgImage from "./background.png"
 
 export default function Hero() {
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay()]);
 
-  useEffect(() => {
-    if (emblaApi) {
-      console.log(emblaApi.slideNodes()) // Access API
-    }
-  }, [emblaApi])
 
   return (
-    <div>
-      <div className="bg-gray-300 w-full aspect-video md:aspect-[3/1] relative">
+    <div className="hero" style={{
+      backgroundImage: `url(${bgImage})`,
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      backgroundRepeat: "no-repeat",
+    
+    }}>
+      {/* <div className="bg-gray-300 w-full aspect-video md:aspect-[3/1] relative">
         <Image
-          src="/assets/LandingPage/Amethi-banner-home.jpg"
+          src="/assets/LandingPage/hero_new.jpg"
           alt="Hero image"
           width={2000}
           height={2000}
@@ -30,12 +29,15 @@ export default function Hero() {
           <div className="embla__container gap-2 items-center">
             <div className="embla__slide">
               <p>
-                &quot;If one accepts the notion that ideas capture people then the only possible response to a person infected by a bad idea, is love and compassion.&quot;
+                &quot;If one accepts the notion that ideas capture people then
+                the only possible response to a person infected by a bad idea,
+                is love and compassion.&quot;
               </p>
             </div>
             <div className="embla__slide">
               <p>
-                &quot;If opportunity is limited to a few, our growth will be a fraction of our capability as a nation.&quot;
+                &quot;If opportunity is limited to a few, our growth will be a
+                fraction of our capability as a nation.&quot;
               </p>
             </div>
             <div className="embla__slide">
@@ -45,23 +47,78 @@ export default function Hero() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div className="p-4 md:px-20 py-10 bg-[#dee8f0]">
+      {/* <div className="p-4 md:px-20 py-10 bg-[#dee8f0]">
         <p>
-          Rahul Gandhi spent his early childhood between Delhi, the political
-          center of India, and Dehradun, a town nestled in the valley between
-          the Himalayas and Shivaliks. He began his undergraduate career at
-          Delhi&quot;s St. Stephen&quot;s College before moving to Harvard
-          University in the USA. In his second year, Rahul transferred to
-          Rollins College in Florida due to security threats following his
-          father&quot;s, the late Prime Minister Rajiv Gandhi, assassination.
-          Rahul Gandhi graduated with a Bachelor&quot;s degree in 1994. The year
-          after, he obtained his M. Phil from Trinity College, Cambridge.
+          Dr. Prashant Yadavrao Padole, an eminent figure of unwavering strength
+          and compassion, has made an indelible impact on the Bhandara-Gondiya
+          constituency. Armed with a distinguished educational background,
+          including an MBBS and MD, he not only possesses exceptional medical
+          expertise but also exemplifies unwavering dedication
+          to his profession.
         </p>
-        <a href="/" className="text-blue-500">
+        <a href="/about" className="text-blue-500">
           Read More
         </a>
+      </div> */}
+      <div className="p-4 md:px-20 py-10 grid grid-cols-1 md:grid-cols-2">
+        <div className="w-full">
+          <Image
+            src="/assets/LandingPage/Padole.png"
+            alt="Hero image"
+            width={2000}
+            height={2000}
+            className="object-cover w-full h-full"
+          />
+        </div>
+        <div className="space-y-4">
+          <div className="w-full">
+            <Image src="/assets/LandingPage/Slogan.png" alt="Hero image" width={500} height={500} className="object-contain max-h-[200px] h-full" />
+          </div>
+          <h3 className="text-3xl">Join Our Movement</h3>
+          <div>
+            <h4 className="text-xl font-bold">Name*</h4>
+            <div className="grid grid-cols-1 gap-2">
+              <input
+                type="text"
+                className="border-2 p-2"
+                placeholder="Name"
+                name="name"
+                required
+              />
+            </div>
+          </div>
+
+          <div>
+            <h4 className="text-xl font-bold">Email*</h4>
+            <input
+              type="email"
+              className="border-2 p-2 w-full"
+              placeholder="Email"
+              name="email"
+              required
+            />
+          </div>
+          <div>
+            <h4 className="text-xl font-bold">Phone Number*</h4>
+            <input
+              type="tel"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" 
+              className="border-2 p-2 w-full"
+              placeholder="Phone Number"
+              name="phone"
+              required
+            />
+          </div>
+
+          <div>
+            <div className="grid grid-cols-1 place-items-center">
+              <button className="border-2 p-2 text-white bg-black uppercase w-full md:w-1/4">Submit</button>
+              
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

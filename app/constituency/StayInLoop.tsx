@@ -10,7 +10,7 @@ export default function StayInLoop() {
       <div className="flex flex-col lg:flex-row justify-start items-start lg:justify-center lg:items-center px-5 lg-px-0">
         <div className="flex justify-start items-start">
           <p className="text-[25px] uppercase mx-2 mb-3 lg:mb-0 lg:mr-5 ">
-            Stay in the Loop
+            Subscribe
           </p>
         </div>
         <div className="w-full lg:w-[40%] lg:mr-5 underline px-2 mb-3 lg:mb-0">

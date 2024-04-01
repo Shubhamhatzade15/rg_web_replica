@@ -1,7 +1,7 @@
 import React from "react";
 import StayInLoop from "../constituency/StayInLoop";
 import { ImFacebook2 } from "react-icons/im";
-import { FaTwitterSquare } from "react-icons/fa";
+import { FaInstagram, FaInstagramSquare, FaTwitterSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGooglePlusSquare } from "react-icons/fa";
 import Link from "next/link";
@@ -15,25 +15,33 @@ export default function Footer() {
           <div className="mx-auto max-w-screen-xl text-center">
             <ul className="flex flex-wrap justify-center items-center mb-6 space-x-2 text-white">
               <li>
-                <ImFacebook2 className="text-4xl" />
+                <Link href={"https://www.facebook.com/people/Prashant-Padole/pfbid02ERmQbJSVCTfsvsEyJqJR9Cr7rY7aENGSdVZ65vPfmSHosLcyjFJY3sbqTvBCKval/"}>
+                  <ImFacebook2 className="text-4xl" />
+                </Link>
               </li>
               <li>
-                <FaTwitterSquare className="text-4xl" />
+                <Link href={"https://twitter.com/_Prashantpadole"}>
+                  <FaTwitterSquare className="text-4xl" />
+                </Link>
               </li>
               <li>
-                <FaLinkedin className="text-4xl" />
-              </li>
-              <li>
-                <FaGooglePlusSquare className="text-4xl" />
+                <Link href={"https://www.instagram.com/drprashantpadole?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="}>
+                  <FaInstagramSquare className="text-4xl" />
+                </Link>
               </li>
             </ul>
             <span className="text-sm text-white sm:text-center ">
               © 2024{" "}
               <a href="#" className="hover:underline">
-                Rahul Gandhi
+                Dr. Prashant Padole
               </a>
               . All Rights Reserved.
+              <br />
+              <a href="https://gbjbuzz.com/">
+                Developed By <span className="underline"> GBJ Buzz</span>
+              </a>
             </span>
+
             <div className="flex space-x-2 text-center justify-center text-xs text-white">
               <Link href="#"> Terms and Conditions </Link>
               <Link href="#"> Privacy Policy </Link>
