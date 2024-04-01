@@ -13,11 +13,7 @@ function breadcrumb() {
       <ol className="flex flex-wrap items-center w-full px-4 py-2 rounded-md">
         <li className="flex items-center antialiased">
           <a
-<<<<<<< HEAD
-            href="/constituency/wayanad"
-=======
             href="/constituency/amethi"
->>>>>>> refs/remotes/origin/main
             className="text-[#2F7CB7] hover:opacity-60 hover:underline"
           >
             Amethi
