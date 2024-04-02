@@ -37,9 +37,6 @@ export default function Footer() {
               </a>
               . All Rights Reserved.
               <br />
-              <a href="https://gbjbuzz.com/">
-                Developed By <span className="underline"> GBJ Buzz</span>
-              </a>
             </span>
 
             <div className="flex space-x-2 text-center justify-center text-xs text-white">
