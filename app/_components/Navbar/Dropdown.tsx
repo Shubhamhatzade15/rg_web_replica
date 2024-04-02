@@ -31,7 +31,7 @@ export default function Dropdown({
   return (
     <button
       ref={dropdownRef}
-      className="lg:w-full py-2 px-2 h-full uppercase relative"
+      className="lg:w-full py-2 px-2 h-full uppercase relative rounded-xl"
       onClick={() => setHidden((x) => !x)}
     >
       {text} <VscTriangleDown className="inline" />

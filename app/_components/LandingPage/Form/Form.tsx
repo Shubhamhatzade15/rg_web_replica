@@ -15,7 +15,7 @@ export default function Form() {
       >
         <input
           type="text"
-          className="bg-transparent border-b-2 border-black focus:border-[#337ab7] outline-none"
+          className="bg-transparent border-b-2 border-black focus:border-[#337ab7] outline-none "
           placeholder="Name*"
           name="name"
           required
@@ -43,7 +43,7 @@ export default function Form() {
         />
         <button
           type="submit"
-          className="uppercase px-4 py-2 bg-[#337ab7] w-fit place-self-center text-white md:col-start-1 md:col-end-3"
+          className="uppercase px-4 py-2 bg-[#337ab7] w-fit place-self-center text-white md:col-start-1 md:col-end-3 rounded-xl"
         >
           Submit
         </button>
