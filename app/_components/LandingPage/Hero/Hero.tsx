@@ -110,7 +110,7 @@ export default function Hero() {
               />
 
             <div>
-              <div className="grid grid-cols-1 place-items-center">
+              <div className="grid grid-cols-1 place-items-center mt-10">
                 <button className="border-2 p-2 text-white bg-black uppercase w-full md:w-1/4">
                   Submit
                 </button>
