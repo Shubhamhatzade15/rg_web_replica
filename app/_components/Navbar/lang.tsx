@@ -19,7 +19,7 @@ function Lang() {
     <div className="relative">
       <button
         id="dropdownRadioButton"
-        className="text-white bg-[#337AB7] font-medium text-sm px-5 py-2.5 text-center inline-flex items-center"
+        className="text-white bg-[#337AB7] font-medium text-sm px-5 py-2.5 text-center inline-flex items-center "
         onClick={toggleDropdown}
         type="button"
       >
