@@ -90,7 +90,7 @@ const Navbar = () => {
             </li>
           );
         })}
-        <li key={7} className="nav-links cursor-pointer uppercase text-[#666] ">
+        <li key={7} className="nav-links cursor-pointer uppercase text-[#666]">
           <Dropdown
             text="Social Media"
             links={[
@@ -110,7 +110,7 @@ const Navbar = () => {
           />
         </li>
         <li>
-          <div className="uppercase bg-[#337ab7] text-white order-1">
+          <div className="uppercase bg-[#337ab7] text-white order-1 rounded-xl">
             <Dropdown
               text={"Language"}
               links={[
@@ -166,7 +166,7 @@ const Navbar = () => {
         </ul>
       )}
 
-      <div className="uppercase bg-[#337ab7] text-white md:hidden order-1">
+      <div className="uppercase bg-[#337ab7] text-white md:hidden order-1 rounded-xl">
         <Dropdown
           text="Language"
           links={[
