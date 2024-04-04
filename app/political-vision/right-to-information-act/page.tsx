@@ -8,6 +8,7 @@ import {
   RiTwitterFill,
   RiLinkedinFill,
   RiGoogleFill,
+  RiInstagramFill,
 } from "react-icons/ri";
 
 import { Montserrat, Roboto_Flex } from "next/font/google";
@@ -15,7 +16,7 @@ import { Montserrat, Roboto_Flex } from "next/font/google";
 const mons = Montserrat({ subsets: ["latin"] });
 const roboto_f = Roboto_Flex({ subsets: ["latin"] });
 
-const hero_banner = "/issues-images/right_information.jpg";
+const hero_banner = "/assets/LandingPage/hero_new.jpg";
 
 export default function page() {
   return (
@@ -31,7 +32,7 @@ export default function page() {
             </div>
             <div className="order-1 md:order-2 grid grid-cols-4 gap-2 text-xl">
               <a
-                href="https://www.facebook.com/sharer/sharer.php?u=https://rahulgandhi.in/amethi/about-amethi&picture=https://rahulgandhi.inhttps://rahulgandhi.in/images/rg_about_us_6aug2018.jpg?1533532960&title=About Amethi&description=About Amethi"
+                href="https://www.facebook.com/people/Prashant-Padole/pfbid02ERmQbJSVCTfsvsEyJqJR9Cr7rY7aENGSdVZ65vPfmSHosLcyjFJY3sbqTvBCKval/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -41,7 +42,7 @@ export default function page() {
               </a>
 
               <a
-                href="https://twitter.com/share?text=About Amethi&url=https://rahulgandhi.in/amethi/about-amethi"
+                href="https://twitter.com/_Prashantpadole"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -51,22 +52,12 @@ export default function page() {
               </a>
 
               <a
-                href="https://www.linkedin.com/shareissue?mini=true&url=https://rahulgandhi.in/amethi/about-amethi&title=About Amethi&summary=About Amethi&source=INC"
+                href="https://www.instagram.com/drprashantpadole"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <div className="flex justify-center items-center size-6 md:size-10 bg-[#4F9DD8] text-white">
-                  <RiLinkedinFill />
-                </div>
-              </a>
-
-              <a
-                href="https://plus.google.com/share?url=https://rahulgandhi.in/amethi/about-amethi"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <div className="flex justify-center items-center size-6 md:size-10 bg-[#4F9DD8] text-white">
-                  <RiGoogleFill />
+                  <RiInstagramFill />
                 </div>
               </a>
             </div>

@@ -48,7 +48,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="flex justify-between items-center gap-x-4 md:gap-x-8 md:flex-wrap w-full px-4 md:px-10  pt-4 md:pt-10 pb-4 nav">
+    <div className="sticky top-0 z-[999] bg-[#249CD7] text-white shadow flex justify-between items-center gap-x-4 md:gap-x-8 md:flex-wrap w-full px-4 md:px-10  pt-4 pb-4 nav">
       <div>
         {/* <h1 className="text-5xl font-signature ml-2"><a className="link-underline hover:transition ease-in-out delay-150 hover:underline hover:decoration-solid" href="">Logo</a></h1> */}
         <h1 className="text-5xl font-signature ml-2">
@@ -64,14 +64,14 @@ const Navbar = () => {
                 />
               </div>
               <div className="flex flex-col justify-center ml-2 uppercase">
-                <div className="text-base md:text-xl font-bold">Dr. Prashant Padole</div>
+                <div className="text-sm md:text-2xl font-bold">Dr. Prashant Padole</div>
               </div>
             </div>
           </a>
         </h1>
       </div>
 
-      <ul className="hidden md:flex items-center flex-wrap gap-6 my-4 ">
+      <ul className="hidden md:flex items-center flex-wrap gap-6 my-4">
         {links.map(({ id, link, title }) => {
           const pathSegments = pathname.split("/");
           const linkSegments = link.split("/");
@@ -84,13 +84,13 @@ const Navbar = () => {
               key={id}
               className={`${
                 isActive ? "active" : ""
-              } nav-links cursor-pointer uppercase text-[#666]`}
+              } nav-links cursor-pointer uppercase`}
             >
               <Link href={link}>{title}</Link>
             </li>
           );
         })}
-        <li key={7} className="nav-links cursor-pointer uppercase text-[#666]">
+        <li key={7} className="nav-links cursor-pointer uppercase">
           <Dropdown
             text="Social Media"
             links={[
@@ -166,7 +166,7 @@ const Navbar = () => {
         </ul>
       )}
 
-      <div className="uppercase bg-[#337ab7] text-white md:hidden order-1 rounded-xl">
+      <div className="uppercase bg-[#337ab7] min-w-[fit-content] text-white md:hidden order-1 rounded-xl">
         <Dropdown
           text="Language"
           links={[

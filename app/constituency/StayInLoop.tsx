@@ -10,15 +10,8 @@ export default function StayInLoop() {
       <div className="flex flex-col lg:flex-row justify-start items-start lg:justify-center lg:items-center px-5 lg-px-0">
         <div className="flex justify-start items-start">
           <p className="text-[25px] uppercase mx-2 mb-3 lg:mb-0 lg:mr-5 ">
-            Subscribe
+            Support Us
           </p>
-        </div>
-        <div className="w-full lg:w-[40%] lg:mr-5 underline px-2 mb-3 lg:mb-0">
-          <input
-            className="bg-transparent w-full border-0 rounded-none outline-none cursor-text text-black shadow-none border-b border-b-black"
-            placeholder="Email"
-            type="email"
-          />
         </div>
         <div className="w-full lg:w-[30%] underline px-2 mb-3 lg:mb-0">
           <input

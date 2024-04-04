@@ -6,7 +6,7 @@ import { BsFillCameraVideoFill } from "react-icons/bs";
 import { MdPhotoCamera } from "react-icons/md";
 
 export default function Media() {
-  const [tab, setTab] = useState(0);
+  const [tab, setTab] = useState(1);
 
   const images = [
     {

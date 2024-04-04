@@ -62,27 +62,18 @@ export default function Hero() {
           Read More
         </a>
       </div> */}
-      <div className="p-4 md:px-20 py-10 grid grid-cols-1 md:grid-cols-2">
-        <div className="w-full">
+      <div className="p-4 md:px-20 grid grid-cols-1 md:grid-cols-2">
+        <div className=" w-full">
           <Image
-            src="/assets/LandingPage/Nana & Prashant.png"
+            src="/Nana + Prashant (Badal Hava).png"
             alt="Hero image"
             width={2000}
             height={2000}
             className="object-cover w-full h-full"
           />
         </div>
-        <div className="space-y-4">
-          <div className="w-full">
-            <Image
-              src="/assets/LandingPage/Slogan.png"
-              alt="Hero image"
-              width={500}
-              height={500}
-              className="object-contain max-h-[200px] h-full"
-            />
-          </div>
-          <h3 className="text-3xl">Join Our Movement</h3>
+        <div className="space-y-4 place-content-center">
+          <h3 className="text-3xl text-center lg:text-left">Join Our Movement</h3>
           <form action="https://getform.io/f/pbqgkqyb" method="POST">
               <h4 className="text-xl font-bold">Name*</h4>
                 <input
