@@ -112,7 +112,7 @@ export default function Footer() {
                   <Link href="/constituency/bhandara">Bhandara</Link>
                 </li>
                 <li>
-                  <Link href="/constituency/gondia">Gondia</Link>
+                  <Link href="/constituency/gondiya">Gondiya</Link>
                 </li>
               </ul>
             </div>
@@ -159,7 +159,7 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-
+          
           <div className="flex space-x-2 text-center justify-center text-xs text-white">
             <Link href="terms&conditions"> Terms and Conditions </Link>
             <Link href="privacypolicy"> Privacy Policy </Link>

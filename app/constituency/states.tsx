@@ -41,10 +41,10 @@ const states = () => {
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
             <Link
-              href="/constituency/gondia"
+              href="/constituency/gondiya"
               className="text-[16px] md:text-[20px] lg:text-[25px] tracking-tighter underline mt-10 hover:text-gray-500 "
             >
-              Gondia
+              Gondiya
             </Link>
           </div>
         </div>

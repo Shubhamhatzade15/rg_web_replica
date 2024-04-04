@@ -12,6 +12,7 @@ import {
 } from "react-icons/ri";
 
 import { Montserrat, Roboto_Flex } from "next/font/google";
+import Image from "next/image";
 
 const mons = Montserrat({ subsets: ["latin"] });
 const roboto_f = Roboto_Flex({ subsets: ["latin"] });
@@ -75,47 +76,78 @@ export default function page() {
             className={`content-ized mt-5 text-justify text-sm md:text-base ${roboto_f.className}`}
           >
             <p>
-              Women hold up half of this nation, and have an equal claim to
-              decision-making.
+              Tumsar Assembly constituency is one of the 288 Vidhan Sabha
+              (legislative assembly) constituencies in Maharashtra state in
+              central India. This constituency is one of the three
+              constituencies located in the Bhandara district.
               <br />
               <br />
-              Today, we have inspiring role models in every field - from ISRO
-              scientists to athletes. But we need to do so much more to end the
-              bias that sets in right at birth, and deprives women of their
-              share in nutrition, healthcare, education, employment, resources
-              and life-chances. The Congress party and I are determined to do
-              everything we can to make this possible.
+              Tumsar is part of the Bhandara-Gondiya Lok Sabha constituency
+              along with five other Vidhan Sabha segments, namely Sakoli and
+              Bhandara in Bhandara district and Gondiya, Arjuni Morgaon and
+              Tirora in the Gondia district.
               <br />
               <br />
-              Statistics about violence against women are often bandied about,
-              but we need to work on the solutions, with urgency. We must care
-              about women&apos;s safety and security, and we must care about
-              their freedom. They are citizens who must have an economic,
-              political and social voice - as guaranteed by the Constitution of
-              India.
-              <br />
-              <br />
-              It was a Congress government that introduced gender budgeting, and
-              our policies like MNREGA have kept women in mind at every step -
-              be it equal wages, involvement in audits, and direct payment into
-              bank accounts. Every action that helps women is our cause, like
-              our recent successful campaign to end GST on sanitary pads.
-              <br />
-              <br />
-              Indian women, whatever their other social identities, deserve
-              equal rights in inheritance, marriage, separation, spousal support
-              and so on. We are committed to this cause. Along with economic
-              empowerment, it is pertinent that our country demands equal
-              political representation of women. While panchayats in many states
-              have 50 percent reservation for women, they are still shamefully
-              under-represented in state assemblies and Parliament. Only 11
-              percent of seats are occupied by women currently, and this must
-              change. The Congress championed the women&apos;s reservation bill
-              in Parliament, and passed it in the Rajya Sabha, but,
-              unfortunately, it lapsed. We offer our wholehearted support to its
-              passage. We need women to frame policy, to strengthen party
-              organisations, and to lead us to a fairer future.
             </p>
+            {/* <div className="bg-gray-300 w-full relative">
+              <Image
+                src="/constituency/tumsar.png"
+                alt="Hero image"
+                width={2000}
+                height={2000}
+                className="object-contain w-full h-full"
+              />
+            </div> */}
+            <h4 className="text-xl font-bold">
+              Members of Legislative assembly
+            </h4>
+            <div className="border-2 border-black divide-y-2 divide-black">
+              <div className="grid grid-cols-3 divide-x-2 divide-black">
+                <p className="p-2">1962</p>
+                <p className="p-2">Ram Lanjewar</p>
+                <p className="p-2">Indian National Congress</p>
+              </div>
+              <div className="grid grid-cols-3 divide-x-2 divide-black">
+                <p className="p-2">1967</p>
+                <p className="p-2">Keshavrao Pardhi</p>
+                <p className="p-2">Indian National Congress</p>
+              </div>
+              <div className="grid grid-cols-3 divide-x-2 divide-black">
+                <p className="p-2">1978</p>
+                <p className="p-2">Subhashchandra Karemore</p>
+                <p className="p-2">Indian National Congress (I)</p>
+              </div>
+              <div className="grid grid-cols-3 divide-x-2 divide-black">
+                <p className="p-2">1985</p>
+                <p className="p-2">Ishwardayal Patale</p>
+                <p className="p-2">Janata Party</p>
+              </div>
+              <div className="grid grid-cols-3 divide-x-2 divide-black">
+                <p className="p-2">1990</p>
+                <p className="p-2">Subhashchandra Karemore</p>
+                <p className="p-2">Independent</p>
+              </div>
+              <div className="grid grid-cols-3 divide-x-2 divide-black">
+                <p className="p-2">1995</p>
+                <p className="p-2">Madhukar Kukde</p>
+                <p className="p-2">Bharatiya Janata Party</p>
+              </div>
+              <div className="grid grid-cols-3 divide-x-2 divide-black">
+                <p className="p-2">2009</p>
+                <p className="p-2">Anil Bawankar</p>
+                <p className="p-2">Indian National Congress</p>
+              </div>
+              <div className="grid grid-cols-3 divide-x-2 divide-black">
+                <p className="p-2">2014</p>
+                <p className="p-2">Charan Waghmare</p>
+                <p className="p-2">Bharatiya Janata Party</p>
+              </div>
+              <div className="grid grid-cols-3 divide-x-2 divide-black">
+                <p className="p-2">2019</p>
+                <p className="p-2">Raju Karemore</p>
+                <p className="p-2">Nationalist Congress Party</p>
+              </div>
+            </div>
           </div>
 
           {/* Page end */}

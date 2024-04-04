@@ -1,7 +1,45 @@
 import React from "react";
 import "./Form.css";
+import { useState } from "react";
+import { supabase } from "../../../supabase";
 
 export default function Form() {
+  const [formData, setFormData] = useState({
+    name: "",
+    phone: "",
+    email: "",
+    pinCode: "",
+  });
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    try {
+      const { data, error } = await supabase
+        .from("Form 1")
+        .insert([formData]);
+      if (error) {
+        throw error;
+      }
+      alert("Form Submitted Suuccessfully!");
+      // Optionally, reset the form after successful submission
+      setFormData({
+        name: "",
+        phone: "",
+        email: "",
+        pinCode: "",
+      });
+    } catch (error: any) {
+      console.error("Error inserting data:", error.message);
+    }
+  };
+
   return (
     <div className="p-4 lg:px-40 md:px-20 py-10 bg-[#dee8f0]">
       <p className="text-center">
@@ -12,7 +50,7 @@ export default function Form() {
         action="https://getform.io/f/pbqgkqyb"
         method="POST"
         className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4 my-4"
-        
+        onSubmit={handleSubmit}
       >
         <input
           type="text"
@@ -21,6 +59,8 @@ export default function Form() {
           name="name"
           required
           data-aos="zoom-in"
+          value={formData.name}
+          onChange={handleChange}
         />
         <input
           type="tel"
@@ -29,6 +69,8 @@ export default function Form() {
           name="phone"
           required
           data-aos="zoom-in"
+          value={formData.phone}
+          onChange={handleChange}
         />
         <input
           type="email"
@@ -37,14 +79,18 @@ export default function Form() {
           name="email"
           required
           data-aos="zoom-in"
+          value={formData.email}
+          onChange={handleChange}
         />
         <input
-          type="text"
+          type="number"
           className="bg-transparent border-b-2 border-black focus:border-[#337ab7] outline-none"
           placeholder="Pin Code*"
-          name="pin-code"
+          name="pinCode"
           required
           data-aos="zoom-in"
+          value={formData.pinCode}
+          onChange={handleChange}
         />
         <button
           type="submit"

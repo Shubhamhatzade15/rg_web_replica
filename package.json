@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@google-cloud/translate": "^8.1.0",
+    "@supabase/supabase-js": "^2.42.0",
     "@types/aos": "^3.0.7",
     "aos": "^2.3.4",
     "embla-carousel-autoplay": "^8.0.0",

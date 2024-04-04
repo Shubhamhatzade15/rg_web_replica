@@ -75,47 +75,97 @@ export default function page() {
             className={`content-ized mt-5 text-justify text-sm md:text-base ${roboto_f.className}`}
           >
             <p>
-              Women hold up half of this nation, and have an equal claim to
-              decision-making.
+              Bhandara is one of the 288 Vidhan Sabha (legislative assembly)
+              constituencies in Maharashtra state in central India. This
+              constituency is one of the three constituencies located in
+              Bhandara district.
               <br />
               <br />
-              Today, we have inspiring role models in every field - from ISRO
-              scientists to athletes. But we need to do so much more to end the
-              bias that sets in right at birth, and deprives women of their
-              share in nutrition, healthcare, education, employment, resources
-              and life-chances. The Congress party and I are determined to do
-              everything we can to make this possible.
+              Bhandara is part of the Bhandara-Gondiya Lok Sabha constituency
+              along with five other Vidhan Sabha segments, namely Sakoli and
+              Tumsar in the Bhandara district and Gondiya, Arjuni Morgaon and
+              Tirora in the Gondia district.
               <br />
               <br />
-              Statistics about violence against women are often bandied about,
-              but we need to work on the solutions, with urgency. We must care
-              about women&apos;s safety and security, and we must care about
-              their freedom. They are citizens who must have an economic,
-              political and social voice - as guaranteed by the Constitution of
-              India.
+              The current constituency comprises Whole Bhandara and Pauni
+              Tehsils including Bhandara and Pauni municipalities.
               <br />
               <br />
-              It was a Congress government that introduced gender budgeting, and
-              our policies like MNREGA have kept women in mind at every step -
-              be it equal wages, involvement in audits, and direct payment into
-              bank accounts. Every action that helps women is our cause, like
-              our recent successful campaign to end GST on sanitary pads.
-              <br />
-              <br />
-              Indian women, whatever their other social identities, deserve
-              equal rights in inheritance, marriage, separation, spousal support
-              and so on. We are committed to this cause. Along with economic
-              empowerment, it is pertinent that our country demands equal
-              political representation of women. While panchayats in many states
-              have 50 percent reservation for women, they are still shamefully
-              under-represented in state assemblies and Parliament. Only 11
-              percent of seats are occupied by women currently, and this must
-              change. The Congress championed the women&apos;s reservation bill
-              in Parliament, and passed it in the Rajya Sabha, but,
-              unfortunately, it lapsed. We offer our wholehearted support to its
-              passage. We need women to frame policy, to strengthen party
-              organisations, and to lead us to a fairer future.
             </p>
+
+            <h4 className="text-xl font-bold">
+              Members of Legislative assembly
+            </h4>
+            <div className="border-2 border-black divide-y-2 divide-black">
+              <div className="grid grid-cols-3 divide-x-2 divide-black">
+                <p className="p-2">1952</p>
+                <p className="p-2">Ram Lanjewar</p>
+                <p className="p-2">Indian National Congress</p>
+              </div>
+              <div className="grid grid-cols-3 divide-x-2 divide-black">
+                <p className="p-2">1957</p>
+                <span>
+                  <p className="p-2">Sitaram Bhambore</p>
+                  <p className="p-2">Dada Dhote</p>
+                </span>
+                <p className="p-2">Indian National Congress</p>
+              </div>
+              <div className="grid grid-cols-3 divide-x-2 divide-black">
+                <p className="p-2">1962</p>
+                <p className="p-2">Dada Dhote</p>
+                <p className="p-2">Independent politician</p>
+              </div>
+              <div className="grid grid-cols-3 divide-x-2 divide-black">
+                <p className="p-2">1968</p>
+                <p className="p-2">Nasikrao Tirpude</p>
+                <p className="p-2">Indian National Congress</p>
+              </div>
+              <div className="grid grid-cols-3 divide-x-2 divide-black">
+                <p className="p-2">1972</p>
+                <p className="p-2">Govind Shende</p>
+                <p className="p-2">Independent politician</p>
+              </div>
+              <div className="grid grid-cols-3 divide-x-2 divide-black">
+                <p className="p-2">1978</p>
+                <p className="p-2">Vitthalprasad Dube	</p>
+                <p className="p-2">Indian National Congress</p>
+              </div>
+              <div className="grid grid-cols-3 divide-x-2 divide-black">
+                <p className="p-2">1980</p>
+                <p className="p-2">Madhavrao Dalal</p>
+                <p className="p-2">Independent politician</p>
+              </div>
+              <div className="grid grid-cols-3 divide-x-2 divide-black">
+                <p className="p-2">1985</p>
+                <p className="p-2">Anandrao Wanjari</p>
+                <p className="p-2">Indian National Congress</p>
+              </div>
+              <div className="grid grid-cols-3 divide-x-2 divide-black">
+                <p className="p-2">1990</p>
+                <p className="p-2">Ram Gopal Aswale</p>
+                <p className="p-2">Bharatiya Janata Party</p>
+              </div>
+              <div className="grid grid-cols-3 divide-x-2 divide-black">
+                <p className="p-2">2004</p>
+                <p className="p-2">Nana Panchbudhe</p>
+                <p className="p-2">Nationalist Congress Party</p>
+              </div>
+              <div className="grid grid-cols-3 divide-x-2 divide-black">
+                <p className="p-2">2009</p>
+                <p className="p-2">Narendra Bhondekar</p>
+                <p className="p-2">Shiv Sena</p>
+              </div>
+              <div className="grid grid-cols-3 divide-x-2 divide-black">
+                <p className="p-2">2014</p>
+                <p className="p-2">Ramchandra Avsare</p>
+                <p className="p-2">	Bharatiya Janata Party</p>
+              </div>
+              <div className="grid grid-cols-3 divide-x-2 divide-black">
+                <p className="p-2">2019</p>
+                <p className="p-2">Narendra Bhondekar</p>
+                <p className="p-2">Independent politician</p>
+              </div>
+            </div>
           </div>
 
           {/* Page end */}
