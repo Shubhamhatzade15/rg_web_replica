@@ -13,6 +13,7 @@ export default function Hero() {
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
       }}
+      id="support-us"
     >
       {/* <div className="bg-gray-300 w-full aspect-video md:aspect-[3/1] relative">
         <Image
@@ -63,7 +64,7 @@ export default function Hero() {
         </a>
       </div> */}
       <div className="p-4 md:px-20 grid grid-cols-1 md:grid-cols-2">
-        <div className=" w-full">
+        <div className=" w-full" data-aos="fade-in">
           <Image
             src="/Nana + Prashant (Badal Hava).png"
             alt="Hero image"
@@ -72,33 +73,35 @@ export default function Hero() {
             className="object-cover w-full h-full"
           />
         </div>
-        <div className="space-y-4 place-content-center">
-          <h3 className="text-3xl text-center lg:text-left">Join Our Movement</h3>
+        <div className="space-y-4 place-content-center" data-aos="fade-up">
+          <h3 className="text-3xl text-center lg:text-left">
+            Join Our Movement
+          </h3>
           <form action="https://getform.io/f/pbqgkqyb" method="POST">
-              <h4 className="text-xl font-bold">Name*</h4>
-                <input
-                  type="text"
-                  className="w-full block border-2 p-2"
-                  placeholder="Name"
-                  name="name"
-                  required
-                />
-              <h4 className="text-xl font-bold">Email*</h4>
-              <input
-                type="email"
-                className="w-full block border-2 p-2 w-full"
-                placeholder="Email"
-                name="email"
-                required
-              />
-              <h4 className="text-xl font-bold">Phone Number*</h4>
-              <input
-                type="tel"
-                className="w-full block border-2 p-2 w-full"
-                placeholder="Phone Number"
-                name="phone"
-                required
-              />
+            <h4 className="text-xl font-bold">Name*</h4>
+            <input
+              type="text"
+              className="w-full block border-2 p-2"
+              placeholder="Name"
+              name="name"
+              required
+            />
+            <h4 className="text-xl font-bold">Email*</h4>
+            <input
+              type="email"
+              className="w-full block border-2 p-2 w-full"
+              placeholder="Email"
+              name="email"
+              required
+            />
+            <h4 className="text-xl font-bold">Phone Number*</h4>
+            <input
+              type="tel"
+              className="w-full block border-2 p-2 w-full"
+              placeholder="Phone Number"
+              name="phone"
+              required
+            />
 
             <div>
               <div className="grid grid-cols-1 place-items-center mt-10">

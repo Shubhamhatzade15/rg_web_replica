@@ -3,7 +3,7 @@ import "./Social.css";
 
 export default function Social() {
   return (
-    <div className="social p-4 md:px-40 py-10 text-white grid grid-cols-1 lg:grid-cols-2 gap-8 place-items-center">
+    <div className="social p-4 md:px-40 py-10 text-white grid grid-cols-1 lg:grid-cols-2 gap-8 place-items-center" data-aos="fade-in" id="feeds">
       {/* <iframe
         src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpeople%2FDr-Prashant-Padole-Office%2F61556826461266%2F&tabs=timeline&width=0&height=0&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
         width="0"

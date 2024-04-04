@@ -12,6 +12,7 @@ export default function Form() {
         action="https://getform.io/f/pbqgkqyb"
         method="POST"
         className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4 my-4"
+        
       >
         <input
           type="text"
@@ -19,6 +20,7 @@ export default function Form() {
           placeholder="Name*"
           name="name"
           required
+          data-aos="zoom-in"
         />
         <input
           type="tel"
@@ -26,6 +28,7 @@ export default function Form() {
           placeholder="Phone Number*"
           name="phone"
           required
+          data-aos="zoom-in"
         />
         <input
           type="email"
@@ -33,6 +36,7 @@ export default function Form() {
           placeholder="Enter Email*"
           name="email"
           required
+          data-aos="zoom-in"
         />
         <input
           type="text"
@@ -40,10 +44,12 @@ export default function Form() {
           placeholder="Pin Code*"
           name="pin-code"
           required
+          data-aos="zoom-in"
         />
         <button
           type="submit"
           className="uppercase px-4 py-2 bg-[#337ab7] w-fit place-self-center text-white md:col-start-1 md:col-end-3 rounded-xl"
+          data-aos="zoom-in"
         >
           Submit
         </button>
