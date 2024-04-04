@@ -109,10 +109,10 @@ export default function Footer() {
               <h4 className="text-xl font-bold">Constituency</h4>
               <ul className="list-disc px-4 space-y-2">
                 <li>
-                  <Link href="/constituency">Bhandara</Link>
+                  <Link href="/constituency/bhandara">Bhandara</Link>
                 </li>
                 <li>
-                  <Link href="/constituency">Gondia</Link>
+                  <Link href="/constituency/gondia">Gondia</Link>
                 </li>
               </ul>
             </div>

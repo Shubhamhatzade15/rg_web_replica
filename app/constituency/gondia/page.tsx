@@ -5,15 +5,15 @@ export default function bhandara() {
   const issues = [
     {
       title: "Arjuni-Morgaon (SC)",
-      link: "/political-vision/job-creation-and-msmes",
+      link: "/constituency/gondia/arjuni-morgaon",
     },
     {
       title: "Tirora",
-      link: "/political-vision/agriculture",
+      link: "/constituency/gondia/tirora",
     },
     {
       title: "Gondia",
-      link: "/political-vision/land-acquisition-bill",
+      link: "/constituency/gondia/gondia",
     },
   ];
 

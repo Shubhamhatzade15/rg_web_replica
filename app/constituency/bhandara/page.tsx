@@ -5,15 +5,15 @@ export default function bhandara() {
   const issues = [
     {
       title: "Tumsar",
-      link: "/political-vision/job-creation-and-msmes",
+      link: "/constituency/bhandara/tumsar",
     },
     {
       title: "Bhandara (SC)",
-      link: "/political-vision/agriculture",
+      link: "/constituency/bhandara/bhandara(SC)",
     },
     {
       title: "Sakoli",
-      link: "/political-vision/land-acquisition-bill",
+      link: "/constituency/bhandara/sakoli",
     },
   ];
 
