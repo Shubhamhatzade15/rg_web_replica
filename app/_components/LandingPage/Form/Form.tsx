@@ -10,6 +10,7 @@ export default function Form() {
     email: "",
     pinCode: "",
   });
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setFormData({
@@ -20,14 +21,14 @@ export default function Form() {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setLoading(false);
     try {
-      const { data, error } = await supabase
-        .from("Form 1")
-        .insert([formData]);
+      const { data, error } = await supabase.from("Form 1").insert([formData]);
       if (error) {
         throw error;
       }
       alert("Form Submitted Suuccessfully!");
+      setLoading(true);
       // Optionally, reset the form after successful submission
       setFormData({
         name: "",
@@ -97,7 +98,7 @@ export default function Form() {
           className="uppercase px-4 py-2 bg-[#337ab7] w-fit place-self-center text-white md:col-start-1 md:col-end-3 rounded-xl"
           data-aos="zoom-in"
         >
-          Submit
+          {loading ? "Posting Data..." : "Submit"}
         </button>
       </form>
     </div>

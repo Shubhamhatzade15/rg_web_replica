@@ -2,8 +2,48 @@ import Image from "next/image";
 import React, { useEffect } from "react";
 import "./Hero.css";
 import bgImage from "./background.png";
+import { useState } from "react";
+import { supabase } from "../../../supabase";
 
 export default function Hero() {
+  const [formData, setFormData] = useState({
+    name: "",
+    phone: "",
+    email: "",
+    pinCode: "",
+  });
+
+  const [loading, setLoading] = useState(false)
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setLoading(true);
+    try {
+      const { data, error } = await supabase.from("Form 1").insert([formData]);
+      if (error) {
+        throw error;
+      }
+      alert("Form Submitted Suuccessfully!");
+      // Optionally, reset the form after successful submission
+      setLoading(false);
+      setFormData({
+        name: "",
+        phone: "",
+        email: "",
+        pinCode: "",
+      });
+    } catch (error: any) {
+      console.error("Error inserting data:", error.message);
+    }
+  };
+
   return (
     <div
       className="hero"
@@ -77,13 +117,15 @@ export default function Hero() {
           <h3 className="text-3xl text-center lg:text-left">
             Join Our Movement
           </h3>
-          <form action="https://getform.io/f/pbqgkqyb" method="POST">
+          <form onSubmit={handleSubmit}>
             <h4 className="text-xl font-bold">Name*</h4>
             <input
               type="text"
               className="w-full block border-2 p-2"
               placeholder="Name"
               name="name"
+              value={formData.name}
+              onChange={handleChange}
               required
             />
             <h4 className="text-xl font-bold">Email*</h4>
@@ -92,6 +134,8 @@ export default function Hero() {
               className="w-full block border-2 p-2 w-full"
               placeholder="Email"
               name="email"
+              value={formData.email}
+              onChange={handleChange}
               required
             />
             <h4 className="text-xl font-bold">Phone Number*</h4>
@@ -100,13 +144,17 @@ export default function Hero() {
               className="w-full block border-2 p-2 w-full"
               placeholder="Phone Number"
               name="phone"
+              value={formData.phone}
+              onChange={handleChange}
               required
             />
 
             <div>
               <div className="grid grid-cols-1 place-items-center mt-10">
-                <button className="border-2 p-2 text-white bg-black uppercase w-full md:w-1/4 rounded-xl">
-                  Submit
+                <button className="border-2 p-2 text-white bg-black uppercase w-full md:w-fit rounded-xl">
+                  {
+                    loading ? "Posting Data..." : "Submit"
+                  }
                 </button>
               </div>
             </div>
