@@ -48,7 +48,6 @@ export default function Form() {
         and inclusive India, join the conversation and sign up below,
       </p>
       <form
-        action="https://getform.io/f/pbqgkqyb"
         method="POST"
         className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4 my-4"
         onSubmit={handleSubmit}
