@@ -5,7 +5,7 @@ import Image from 'next/image'
 export default function Video() {
   return (
     <div className="video p-4 md:px-20 py-10 text-center" data-aos="fade-up">
-        <div className="bg-gray-300 mx-auto my-4">
+        <div className="bg-gray-300 mx-auto my-4 overflow-clip rounded-lg">
           <Image
             src="/assets/Banner.png"
             alt="Hero image"

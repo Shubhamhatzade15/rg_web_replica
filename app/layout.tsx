@@ -9,6 +9,7 @@ import { AOSInit } from "./_components/aos";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://www.drprashantpadole.in/'),
   title: "Dr Prashant Padole - Indian National Congress",
   description:
     "Dr. Prashant Yadavrao Padole - Indian National Congress Nominated Lok Sabha Candidate. Dr. Prashant Yadavrao Padole is an eminent figure who has left an indelible impact on the Bhandara-Gondiya constituency through his unwavering strength and compassion.",

@@ -159,10 +159,14 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          
+
           <div className="flex space-x-2 text-center justify-center text-xs text-white">
             <Link href="terms&conditions"> Terms and Conditions </Link>
             <Link href="privacypolicy"> Privacy Policy </Link>
+          </div>
+
+          <div className="flex space-x-2 text-center justify-center text-xs text-white mt-4">
+            Designed & Developed By&nbsp;<a href="https://gbjbuzz.com/" className="underline" target="_blank">GBJ BUZZ PVT. LTD.</a>
           </div>
         </footer>
       </div>
