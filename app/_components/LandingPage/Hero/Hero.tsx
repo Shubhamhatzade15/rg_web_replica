@@ -118,7 +118,7 @@ export default function Hero() {
             Join Our Movement
           </h3>
           <form onSubmit={handleSubmit}>
-            <h4 className="text-xl font-bold">Name*</h4>
+            <p className="text-xl font-bold">Name*</p>
             <input
               type="text"
               className="w-full block border-2 p-2"
@@ -128,7 +128,7 @@ export default function Hero() {
               onChange={handleChange}
               required
             />
-            <h4 className="text-xl font-bold">Email*</h4>
+            <p className="text-xl font-bold">Email*</p>
             <input
               type="email"
               className="w-full block border-2 p-2 w-full"
@@ -138,7 +138,7 @@ export default function Hero() {
               onChange={handleChange}
               required
             />
-            <h4 className="text-xl font-bold">Phone Number*</h4>
+            <p className="text-xl font-bold">Phone Number*</p>
             <input
               type="tel"
               className="w-full block border-2 p-2 w-full"
