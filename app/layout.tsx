@@ -34,7 +34,7 @@ export default function RootLayout({
             })(window, document, "clarity", "script", "lr8773fr19");`}
         </script>
       </Head>
-      <body className={inter.className}>
+      <body className={inter.className + " overflow-x-hidden"}>
         
         <Navbar />
         {children}

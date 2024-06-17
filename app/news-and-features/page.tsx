@@ -6,6 +6,22 @@ import Card from "./Card";
 export default function page() {
   const news = [
     {
+      img: "/news/timesofindia.webp",
+      link: "https://timesofindia.indiatimes.com/elections/lok-sabha-elections/maharashtra/bhandara-gondiya/candidateshow/prashant-yadaorao-padole-1342",
+    },
+    {
+      img: "/news/News18.svg",
+      link: "https://www.news18.com/elections/bhandara-gondiya-election-result-2024-live-updates-highlights-lok-sabha-winner-loser-leading-trailing-mp-margin-8918534.html",
+    },
+    {
+      img: "/news/indiatoday.png",
+      link: "https://www.indiatoday.in/elections/lok-sabha/story/bhandara-gondiya-maharashtra-lok-sabha-election-results-2024-live-updates-clse-2547817-2024-06-04",
+    },
+    {
+      img: "/news/wikipedia.svg",
+      link: "https://en.m.wikipedia.org/wiki/Prashant_Yadaorao_Padole",
+    },
+    {
       img: "/news/loktej.webp",
       link: "https://www.loktej.com/article/101075/dr-prashant-y-padole-a-life-dedicated-to-service-and",
     },
@@ -22,18 +38,6 @@ export default function page() {
       link: "https://jansansar.com/dr-prashant-y-padole-a-life-dedicated-to-service-and-leadership/",
     },
     {
-      img: "/news/vande-gujarat.jpg",
-      link: "https://vandegujrat.com/dr-prashant-y-padole-a-life-dedicated-to-service-and-leadership/",
-    },
-    {
-      img: "/news/allahabadpost.webp",
-      link: "https://allahabadpost.in/hindi/index.php/2024/04/18/dr-prashant-y-padole-a-life-dedicated-to-service-and-leadership/",
-    },
-    {
-      img: "/news/Jodhpur-reporter.webp",
-      link: "https://jodhpurreporter.com/hindi/index.php/2024/04/18/dr-prashant-y-padole-a-life-dedicated-to-service-and-leadership/",
-    },
-    {
       img: "/news/maharashtra24x7.webp",
       link: "https://maharashtra24x7.com/national-hindi/%e0%a4%a1%e0%a5%89-%e0%a4%aa%e0%a5%8d%e0%a4%b0%e0%a4%b6%e0%a4%be%e0%a4%82%e0%a4%a4-%e0%a4%b5%e0%a4%be%e0%a4%88-%e0%a4%aa%e0%a4%a1%e0%a5%8b%e0%a4%b2%e0%a5%87-%e0%a4%b8%e0%a5%87%e0%a4%b5%e0%a4%be/",
     },
@@ -42,28 +46,8 @@ export default function page() {
       link: "https://holamumbai.com/national-news/%E0%A4%A1%E0%A5%89-%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%B6%E0%A4%BE%E0%A4%82%E0%A4%A4-%E0%A4%B5%E0%A4%BE%E0%A4%88-%E0%A4%AA%E0%A4%A1%E0%A5%8B%E0%A4%B2%E0%A5%87-%E0%A4%B8%E0%A5%87%E0%A4%B5%E0%A4%BE/",
     },
     {
-      img: "/news/indorepioneer.webp",
-      link: "https://indorepioneer.com/2024/04/18/%e0%a4%a1%e0%a5%89-%e0%a4%aa%e0%a5%8d%e0%a4%b0%e0%a4%b6%e0%a4%be%e0%a4%82%e0%a4%a4-%e0%a4%b5%e0%a4%be%e0%a4%88-%e0%a4%aa%e0%a4%a1%e0%a5%8b%e0%a4%b2%e0%a5%87-%e0%a4%b8%e0%a5%87%e0%a4%b5%e0%a4%be/",
-    },
-    {
-      img: "/news/khabrerajasthan.webp",
-      link: "https://khabarerajasthan.com/hindi/index.php/2024/04/18/dr-prashant-y-padole-a-life-dedicated-to-service-and-leadership/",
-    },
-    {
-      img: "/news/jabalpur.png",
-      link: "https://livejabalpur.com/hn/index.php/2024/04/18/dr-prashant-y-padole-a-life-dedicated-to-service-and-leadership/",
-    },
-    {
       img: "/news/livemumbai.webp",
       link: "https://hn.livemumbai.in/2024/04/18/%e0%a4%a1%e0%a5%89-%e0%a4%aa%e0%a5%8d%e0%a4%b0%e0%a4%b6%e0%a4%be%e0%a4%82%e0%a4%a4-%e0%a4%b5%e0%a4%be%e0%a4%88-%e0%a4%aa%e0%a4%a1%e0%a5%8b%e0%a4%b2%e0%a5%87-%e0%a4%b8%e0%a5%87%e0%a4%b5%e0%a4%be/",
-    },
-    {
-      img: "/news/lucknowdigital.webp",
-      link: "https://lucnkowdigital.com/national/dr-prashant-y-padole-a-life-dedicated-to-service-and-leadership/",
-    },
-    {
-      img: "/news/rajasthanexpress.webp",
-      link: "https://hindi.rajasthanexpress.in/2024/04/18/%e0%a4%a1%e0%a5%89-%e0%a4%aa%e0%a5%8d%e0%a4%b0%e0%a4%b6%e0%a4%be%e0%a4%82%e0%a4%a4-%e0%a4%b5%e0%a4%be%e0%a4%88-%e0%a4%aa%e0%a4%a1%e0%a5%8b%e0%a4%b2%e0%a5%87-%e0%a4%b8%e0%a5%87%e0%a4%b5%e0%a4%be/",
     },
     {
       img: "/news/prakharjagran.webp",
