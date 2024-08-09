@@ -1,5 +1,5 @@
 import React from "react";
-import StayInLoop from "../constituency/StayInLoop";
+import StayInLoop from "../[locale]/constituency/StayInLoop";
 import { ImFacebook2 } from "react-icons/im";
 import {
   FaInstagram,

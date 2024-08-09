@@ -1,7 +1,7 @@
 import React from "react";
 import "./Form.css";
 import { useState } from "react";
-import { supabase } from "../../../supabase";
+import { supabase } from "../../../[locale]/supabase";
 
 export default function Form() {
   const [formData, setFormData] = useState({

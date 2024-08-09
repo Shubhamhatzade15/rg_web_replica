@@ -2,7 +2,7 @@
 
 import "./Navbar.css";
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/navigation";
 import { usePathname } from "next/navigation";
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
@@ -16,6 +16,8 @@ import { IoNewspaperSharp } from "react-icons/io5";
 import { GoFileMedia } from "react-icons/go";
 import { MdPermMedia } from "react-icons/md";
 import { IoShareSocial } from "react-icons/io5";
+import { useTranslations } from "next-intl";
+import Lang from "./lang";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -67,6 +69,8 @@ const Navbar = () => {
     },
   ];
 
+  const t = useTranslations();
+
   return (
     <div className="overflow-x-clip sticky top-0 z-[999] bg-[#249cd7] text-white shadow flex justify-between items-center gap-x-4 md:gap-x-8 md:flex-wrap w-full px-4 md:px-10  pt-4 pb-4 nav">
       <div>
@@ -84,9 +88,7 @@ const Navbar = () => {
                 />
               </div>
               <div className="flex flex-col justify-center ml-2 uppercase">
-                <div className="text-sm md:text-2xl font-bold">
-                  Dr. Prashant Padole
-                </div>
+                <div className="text-sm md:text-2xl font-bold">{t("name")}</div>
               </div>
             </div>
           </a>
@@ -133,19 +135,7 @@ const Navbar = () => {
         </li>
         <li>
           <div className="uppercase bg-[#337ab7] text-white order-1 rounded-xl">
-            <Dropdown
-              text={"Language"}
-              links={[
-                {
-                  title: "English",
-                  link: "#",
-                },
-                {
-                  title: "Hindi",
-                  link: "#",
-                },
-              ]}
-            />
+            <Lang />
           </div>
         </li>
       </ul>
@@ -229,7 +219,7 @@ const Navbar = () => {
       </div>
 
       <div className="uppercase bg-[#337ab7] min-w-[fit-content] text-white md:hidden order-1 rounded-xl">
-        <Dropdown
+        {/* <Dropdown
           text="Language"
           links={[
             {
@@ -241,7 +231,8 @@ const Navbar = () => {
               link: "#",
             },
           ]}
-        />
+        /> */}
+        <Lang />
       </div>
     </div>
   );

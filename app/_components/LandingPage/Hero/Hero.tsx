@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 import "./Hero.css";
 import bgImage from "./background.png";
 import { useState } from "react";
-import { supabase } from "../../../supabase";
+import { supabase } from "../../../[locale]/supabase";
 
 export default function Hero() {
   const [formData, setFormData] = useState({

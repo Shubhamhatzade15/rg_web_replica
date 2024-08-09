@@ -1,99 +1,62 @@
 "use client";
 
-import React, { useState } from "react";
+import { usePathname } from "@/navigation";
+import { useRouter } from "@/navigation";
+import React, { useEffect, useRef, useState } from "react";
+import { VscTriangleDown } from "react-icons/vsc";
 
 function Lang() {
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [selectedLang, setSelectedLang] = useState("en");
+  const router = useRouter();
+  const pathname = usePathname();
 
-  const toggleDropdown = () => {
-    setIsDropdownOpen(!isDropdownOpen);
-  };
+  const [hidden, setHidden] = React.useState(true);
 
-  const handleLangChange = (lang: any) => {
-    setSelectedLang(lang);
-    setIsDropdownOpen(false); // Close the dropdown after selection
+  const dropdownRef = useRef<HTMLButtonElement>(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event: { target: any }) => {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target as Node)
+      ) {
+        setHidden(true);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
+  const changeLang = (lang: string) => {
+    router.push(pathname, { locale: lang });
   };
 
   return (
-    <div className="relative">
-      <button
-        id="dropdownRadioButton"
-        className="text-white bg-[#337AB7] font-medium text-sm px-5 py-2.5 text-center inline-flex items-center "
-        onClick={toggleDropdown}
-        type="button"
-      >
-        Language
-        <svg
-          className="w-2.5 h-2.5 ms-3"
-          aria-hidden="true"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 10 6"
-        >
-          <path
-            stroke="currentColor"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="m1 1 4 4 4-4"
-          />
-        </svg>
-      </button>
-
-      {/* Dropdown menu */}
-      {isDropdownOpen && (
-        <div
-          id="dropdownDefaultRadio"
-          className="absolute top-full left-0 z-10 w-48 bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600"
-        >
-          <ul
-            className="p-3 space-y-3 text-sm bg-white"
-            aria-labelledby="dropdownRadioButton"
-          >
-            <li>
-              <div className="flex items-center">
-                <input
-                  id="default-radio-1"
-                  type="radio"
-                  value="en"
-                  name="lang"
-                  checked={selectedLang === "en"}
-                  onChange={() => handleLangChange("en")}
-                  className="w-4 h-4 bg-gray-100 border-gray-300"
-                />
-                <label
-                  htmlFor="default-radio-1"
-                  className="ms-2 text-sm font-medium"
-                >
-                  English (en)
-                </label>
-              </div>
+    <button
+      ref={dropdownRef}
+      className="lg:w-full py-2 px-2 h-full uppercase relative rounded-xl text-sm"
+      onClick={() => setHidden((x) => !x)}
+    >
+      <span className="text-sm">
+        Language <VscTriangleDown className="inline" />
+      </span>
+      {!hidden && (
+        <div className="absolute top-full right-0 w-full text-black text-left bg-white shadow-lg z-10">
+          <ul>
+            <li className="p-2 hover:bg-gray-200">
+              <button className="block" onClick={() => changeLang("en")}>
+                English
+              </button>
             </li>
-
-            <li>
-              <div className="flex items-center">
-                <input
-                  id="default-radio-2"
-                  type="radio"
-                  value="hi"
-                  name="lang"
-                  checked={selectedLang === "hi"}
-                  onChange={() => handleLangChange("hi")}
-                  className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300"
-                />
-                <label
-                  htmlFor="default-radio-2"
-                  className="ms-2 text-sm font-medium"
-                >
-                  हिंदी (hi)
-                </label>
-              </div>
+            <li className="p-2 hover:bg-gray-200">
+              <button className="block" onClick={() => changeLang("mr")}>Marathi</button>
             </li>
           </ul>
         </div>
       )}
-    </div>
+    </button>
   );
 }
 
