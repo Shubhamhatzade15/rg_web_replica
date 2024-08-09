@@ -36,62 +36,21 @@ const Content = () => {
           </div>
           <br />
           <p>
-            Dr. Padole&quot;s relentless commitment to serving his community is
-            evident through his tireless efforts in ensuring equitable access to
-            high-quality healthcare for all residents.As a leader, Dr. Padole
-            showcases exemplary qualities that inspire those around him. His
-            active engagement in social initiatives and notable participation in
-            the Bhandara District Cooperative Bank elections demonstrate his
-            visionary leadership. By actively involving himself in various
-            community endeavors, Dr. Padole fosters a sense of unity and
-            progress, encouraging individuals to come together for the
-            betterment of society.
+          {t("para2")}
           </p>
           <br />
           <p>
-            Throughout his journey, Dr. Padole has faced numerous challenges,
-            yet his resilience remains unwavering. He serves as an inspiration
-            to all, demonstrating his determination to overcome obstacles and
-            bring about positive change. His ability to navigate difficult
-            circumstances with grace and determination showcases his unwavering
-            commitment to the welfare of the people he serves.One of Dr.
-            Padole&quot;s most remarkable qualities is his genuine empathy,
-            which he extends to the underprivileged and vulnerable. He
-            recognizes the importance of addressing the needs of marginalized
-            communities and works tirelessly to uplift them. By providing
-            healthcare services, support, and compassion to those in need, Dr.
-            Padole leaves an enduring impact on their lives, fostering hope and
-            healing where it is most needed.
+          {t("para3")}  
           </p>
           <br />
           <p>
-            Driven by a visionary outlook, Dr. Prashant Yadavrao Padole
-            envisions a future characterized by progress, unity, and equal
-            opportunities for all. He understands that true transformation is
-            achieved through inclusive development, where every individual has a
-            chance to thrive. By advocating for equal access to education,
-            healthcare, and socioeconomic opportunities, Dr. Padole strives to
-            bridge the gaps that hinder progress and create a brighter future
-            for his constituency.Dr. Padole&quot;s remarkable journey stands as
-            a testament to the transformative power of selfless service. He
-            serves as an extraordinary role model for individuals driven by
-            purpose and a genuine desire to make a difference.
+          {t("para4")}
           </p>
 
           <br />
 
           <p>
-            Through his unwavering dedication to his profession, his engagement
-            in community initiatives, and his compassion for the
-            underprivileged, he has become a beacon of hope and inspiration.The
-            Bhandara-Gondiya constituency is indeed fortunate to have such an
-            exceptional leader steering them towards a brighter and more
-            compassionate future. Dr. Prashant Yadavrao Padole&quot;s unwavering
-            strength, exceptional medical expertise, and compassionate nature
-            have made him an invaluable asset to his community. His legacy will
-            continue to inspire generations to come, reminding us all of the
-            profound impact that one dedicated individual can have on the lives
-            of many.
+          {t("para5")}
           </p>
         </div>
       </div>

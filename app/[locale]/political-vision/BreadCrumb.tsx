@@ -1,6 +1,7 @@
 import React from "react";
 import { Montserrat } from "next/font/google";
 import { Link } from "@/navigation";
+import { useTranslations } from "next-intl";
 
 const mons = Montserrat({ subsets: ["latin"] });
 
@@ -9,6 +10,9 @@ interface BreadcrumbProps {
 }
 
 function Breadcrumb({ pageName }: BreadcrumbProps) {
+
+  const t = useTranslations("issues");
+
   return (
     <nav
       aria-label="breadcrumb"
@@ -20,7 +24,7 @@ function Breadcrumb({ pageName }: BreadcrumbProps) {
             href="/issues"
             className="text-[#2F7CB7] hover:opacity-60 hover:underline"
           >
-            KEY ISSUES
+            {t("links.key")}
           </Link>
           <span className="mx-2 antialiased pointer-events-none select-none">
             /

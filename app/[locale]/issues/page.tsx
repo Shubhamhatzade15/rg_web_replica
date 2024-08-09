@@ -13,11 +13,11 @@ export default function page() {
       link: "/political-vision/job-creation-and-msmes",
     },
     {
-      title: "Agriculture",
+      title: "links.2",
       link: "/political-vision/agriculture",
     },
     {
-      title: "Land Aquistion Bill",
+      title: "links.3",
       link: "/political-vision/land-acquisition-bill",
     },
     {
@@ -62,7 +62,7 @@ export default function page() {
         />
       </div>
       <div className="p-4 px-6 lg:px-60 md:px-20">
-        <h1 className="text-4xl font-bold">Manifesto</h1>
+        <h1 className="text-4xl font-bold">{t("title2")}</h1>
         <br />
 
         <Image
