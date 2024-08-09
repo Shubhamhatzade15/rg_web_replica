@@ -1,7 +1,7 @@
 import React from "react";
 
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/navigation";
 
 import wayanad from "../../public/constituency/wayanad.jpg";
 import amethi from "../../public/constituency/amethi.jpg";

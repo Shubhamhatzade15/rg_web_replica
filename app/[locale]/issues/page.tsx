@@ -2,11 +2,14 @@ import Image from "next/image";
 import React from "react";
 
 import "./style.css";
+import { Link } from "@/navigation";
+import { useTranslations } from "next-intl";
 
 export default function page() {
+  const t = useTranslations("issues");
   const issues = [
     {
-      title: "Jobs and MSME",
+      title: "links.1",
       link: "/political-vision/job-creation-and-msmes",
     },
     {
@@ -61,7 +64,7 @@ export default function page() {
       <div className="p-4 px-6 lg:px-60 md:px-20">
         <h1 className="text-4xl font-bold">Manifesto</h1>
         <br />
-        
+
         <Image
           src="/assets/Issues/issues.jpg"
           alt="Hero image"
@@ -89,12 +92,12 @@ export default function page() {
               key={index + 1}
               className="hvr-shutter-out-vertical uppercase block border-b border-[#337ab7] w-full group relative cursor-pointer"
             >
-              <a
+              <Link
                 href={issue.link}
                 className="block w-full h-full py-4 px-2 group-hover:text-white"
               >
-                {issue.title}
-              </a>
+                {t(issue.title)}
+              </Link>
             </div>
           );
         })}

@@ -1,3 +1,12 @@
 {
-    "name": "डॉ. प्रशांत पडोळे"
+    "name": "डॉ. प्रशांत पडोळे",
+    "about": {
+        "title": "डॉ. प्रशांत पडोळे यांच्याबद्दल",
+        "para1": "Dr. Prashant Yadavrao Padole is an eminent figure who has left an indelible impact on the Bhandara-Gondiya constituency through his unwavering strength and compassion. As a leader, Dr. Padole showcases exemplary qualities that inspire those around him. His active engagement in social initiatives and notable participation in the Bhandara District Cooperative Bank elections demonstrate his visionary leadership. By actively involving himself in various community endeavors, Dr. Padole fosters a sense of unity and progress, encouraging individuals to come together for the betterment of society.With a distinguished educational background that includes an MBBS and MD, he not only possesses exceptional medical expertise but also exemplifies a deep-rooted dedication to his profession."
+    },
+    "issues": {
+      "links": {
+          "1": "नोकऱ्या आणि एमएसएमई"
+      }
+    }
 }

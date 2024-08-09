@@ -4,32 +4,25 @@ import { FaTwitterSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGooglePlusSquare } from "react-icons/fa";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 const Content = () => {
+
+
+  const t = useTranslations("about");
+
   return (
     <div className="">
       <div className="bg-white p-10 md:px-80 md:pt-10">
         <div className="flex items-center justify-between">
           <h1 className="md:text-4xl text-3xl font-bold text-slate-900">
-            About Dr. Prashant Padole
+            {t("title")}
           </h1>
         </div>
         <br />
         <div className="text-2xl md:text-xl text-justify ">
           <p>
-            Dr. Prashant Yadavrao Padole is an eminent figure who has left an
-            indelible impact on the Bhandara-Gondiya constituency through his
-            unwavering strength and compassion. As a leader, Dr. Padole
-            showcases exemplary qualities that inspire those around him. His
-            active engagement in social initiatives and notable participation in
-            the Bhandara District Cooperative Bank elections demonstrate his
-            visionary leadership. By actively involving himself in various
-            community endeavors, Dr. Padole fosters a sense of unity and
-            progress, encouraging individuals to come together for the
-            betterment of society.With a distinguished educational background
-            that includes an MBBS and MD, he not only possesses exceptional
-            medical expertise but also exemplifies a deep-rooted dedication to
-            his profession.
+          {t("para1")}
           </p>
           <br />
           <div className="bg-gray-300 w-full relative">

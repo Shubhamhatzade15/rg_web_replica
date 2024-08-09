@@ -1,5 +1,6 @@
 import React from "react";
 import { Montserrat } from "next/font/google";
+import { Link } from "@/navigation";
 
 const mons = Montserrat({ subsets: ["latin"] });
 
@@ -15,12 +16,12 @@ function Breadcrumb({ pageName }: BreadcrumbProps) {
     >
       <ol className="flex flex-wrap items-center w-full px-4 py-2 rounded-md">
         <li className="flex items-center antialiased">
-          <a
+          <Link
             href="/issues"
             className="text-[#2F7CB7] hover:opacity-60 hover:underline"
           >
             KEY ISSUES
-          </a>
+          </Link>
           <span className="mx-2 antialiased pointer-events-none select-none">
             /
           </span>
