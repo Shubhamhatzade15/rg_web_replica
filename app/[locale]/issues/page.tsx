@@ -5,7 +5,7 @@ import "./style.css";
 import { Link } from "@/navigation";
 import { useTranslations } from "next-intl";
 
-export default function page() {
+export default function IssuesPage() {
   const t = useTranslations("issues");
   const issues = [
     {
@@ -13,19 +13,19 @@ export default function page() {
       link: "/political-vision/job-creation-and-msmes",
     },
     {
-      title: "Agriculture",
+      title: "links.2",
       link: "/political-vision/agriculture",
     },
     {
-      title: "Land Aquistion Bill",
+      title: "links.3",
       link: "/political-vision/land-acquisition-bill",
     },
     {
-      title: "Women Empowerment",
+      title: "links.4",
       link: "/political-vision/womens-empowerment",
     },
     {
-      title: "Right to Information",
+      title: "links.5",
       link: "/political-vision/right-to-information-act",
     },
     {
@@ -62,7 +62,7 @@ export default function page() {
         />
       </div>
       <div className="p-4 px-6 lg:px-60 md:px-20">
-        <h1 className="text-4xl font-bold">Manifesto</h1>
+        <h1 className="text-4xl font-bold">{t("title2")}</h1>
         <br />
 
         <Image

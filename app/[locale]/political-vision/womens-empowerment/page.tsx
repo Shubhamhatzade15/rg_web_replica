@@ -12,13 +12,15 @@ import {
 } from "react-icons/ri";
 
 import { Montserrat, Roboto_Flex } from "next/font/google";
+import { useTranslations } from "next-intl";
 
 const mons = Montserrat({ subsets: ["latin"] });
 const roboto_f = Roboto_Flex({ subsets: ["latin"] });
 
 const hero_banner = "/assets/LandingPage/hero_new.jpg";
 
-export default function page() {
+export default function WomenPage() {
+  const t = useTranslations("issues.links");
   return (
     <div>
       <Hero bannerSrc={hero_banner} />
@@ -28,7 +30,7 @@ export default function page() {
         <div className="px-4 md:px-10">
           <div className="flex flex-col justify-start items-start md:flex-row md:justify-between md:items-center">
             <div className="order-2 md:order-1 text-3xl text-[#032B5B]">
-              Women Empowerment
+              {t("4")}
             </div>
             <div className="order-1 md:order-2 grid grid-cols-4 gap-2 text-xl">
               <a
@@ -66,7 +68,7 @@ export default function page() {
           {/* Bread crumb */}
 
           <div className="mt-5 bg-gray-100 ">
-            <Breadcrumb pageName="Women Empowerment" />
+            <Breadcrumb pageName={t("4")} />
           </div>
 
           {/* Page text */}
@@ -75,46 +77,19 @@ export default function page() {
             className={`content-ized mt-5 text-justify text-sm md:text-base ${roboto_f.className}`}
           >
             <p>
-              Women hold up half of this nation, and have an equal claim to
-              decision-making.
+              {t("41")}
               <br />
               <br />
-              Today, we have inspiring role models in every field - from ISRO
-              scientists to athletes. But we need to do so much more to end the
-              bias that sets in right at birth, and deprives women of their
-              share in nutrition, healthcare, education, employment, resources
-              and life-chances. The Congress party and I are determined to do
-              everything we can to make this possible.
+              {t("42")}
               <br />
               <br />
-              Statistics about violence against women are often bandied about,
-              but we need to work on the solutions, with urgency. We must care
-              about women&apos;s safety and security, and we must care about
-              their freedom. They are citizens who must have an economic,
-              political and social voice - as guaranteed by the Constitution of
-              India.
+              {t("43")}
               <br />
               <br />
-              It was a Congress government that introduced gender budgeting, and
-              our policies like MNREGA have kept women in mind at every step -
-              be it equal wages, involvement in audits, and direct payment into
-              bank accounts. Every action that helps women is our cause, like
-              our recent successful campaign to end GST on sanitary pads.
+              {t("44")}
               <br />
               <br />
-              Indian women, whatever their other social identities, deserve
-              equal rights in inheritance, marriage, separation, spousal support
-              and so on. We are committed to this cause. Along with economic
-              empowerment, it is pertinent that our country demands equal
-              political representation of women. While panchayats in many states
-              have 50 percent reservation for women, they are still shamefully
-              under-represented in state assemblies and Parliament. Only 11
-              percent of seats are occupied by women currently, and this must
-              change. The Congress championed the women&apos;s reservation bill
-              in Parliament, and passed it in the Rajya Sabha, but,
-              unfortunately, it lapsed. We offer our wholehearted support to its
-              passage. We need women to frame policy, to strengthen party
-              organisations, and to lead us to a fairer future.
+              {t("45")}
             </p>
           </div>
 
