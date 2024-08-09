@@ -4,10 +4,12 @@ import React, { useState } from "react";
 
 import { Montserrat } from "next/font/google";
 import { supabase } from "../supabase";
+import { useTranslations } from "next-intl";
 
 const mons = Montserrat({ subsets: ["latin"] });
 
 export default function StayInLoop() {
+  const t = useTranslations("home");
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
@@ -50,14 +52,14 @@ export default function StayInLoop() {
       <div className="flex flex-col lg:flex-row justify-start items-start lg:justify-center lg:items-center px-5 lg-px-0">
         <div className="flex justify-start items-start">
           <p className="text-[25px] uppercase mx-2 mb-3 lg:mb-0 lg:mr-5 ">
-            Support Us
+            {t("support")}
           </p>
         </div>
         <form className="flex justify-center" action="" onSubmit={handleSubmit}>
           <div className="underline px-2 mb-3 lg:mb-0">
             <input
               className="bg-transparent w-full border-0 rounded-none outline-none cursor-text text-black shadow-none border-b border-b-black"
-              placeholder="Phone"
+              placeholder= {t("support")}
               type="tel"
               value={formData.phone}
               onChange={handleChange}
@@ -68,7 +70,7 @@ export default function StayInLoop() {
               type="submit"
               className="text-white bg-[#327db7] text-sm px-5 py-2.5 uppercase mx-2 lg:mx-5 rounded-xl"
             >
-              Submit
+               {t("submit")}
             </button>
           </div>
         </form>

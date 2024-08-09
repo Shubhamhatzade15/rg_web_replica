@@ -2,12 +2,15 @@
 
 import { usePathname } from "@/navigation";
 import { useRouter } from "@/navigation";
+import { useTranslations } from "next-intl";
 import React, { useEffect, useRef, useState } from "react";
 import { VscTriangleDown } from "react-icons/vsc";
 
 function Lang() {
   const router = useRouter();
   const pathname = usePathname();
+
+  const t = useTranslations();
 
   const [hidden, setHidden] = React.useState(true);
 
@@ -40,18 +43,18 @@ function Lang() {
       onClick={() => setHidden((x) => !x)}
     >
       <span className="text-sm">
-        Language <VscTriangleDown className="inline" />
+        {t("header.language")} <VscTriangleDown className="inline" />
       </span>
       {!hidden && (
         <div className="absolute top-full right-0 w-full text-black text-left bg-white shadow-lg z-10">
           <ul>
             <li className="p-2 hover:bg-gray-200">
               <button className="block" onClick={() => changeLang("en")}>
-                English
+                {t("english")}
               </button>
             </li>
             <li className="p-2 hover:bg-gray-200">
-              <button className="block" onClick={() => changeLang("mr")}>Marathi</button>
+              <button className="block" onClick={() => changeLang("mr")}>{t("marathi")}</button>
             </li>
           </ul>
         </div>

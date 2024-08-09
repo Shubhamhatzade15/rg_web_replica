@@ -1,3 +1,4 @@
+import { useTranslations } from "next-intl";
 import React, { useEffect, useRef } from "react";
 import { VscTriangleDown } from "react-icons/vsc";
 
@@ -8,6 +9,7 @@ export default function Dropdown({
   text: string;
   links: { title: string; link: string }[];
 }) {
+  const t = useTranslations("header");
   const [hidden, setHidden] = React.useState(true);
 
   const dropdownRef = useRef<HTMLButtonElement>(null);
@@ -34,7 +36,7 @@ export default function Dropdown({
       className="lg:w-full py-2 px-2 h-full uppercase relative rounded-xl"
       onClick={() => setHidden((x) => !x)}
     >
-      {text} <VscTriangleDown className="inline" />
+      {t(text)} <VscTriangleDown className="inline" />
       {!hidden && (
         <div className="absolute top-full right-0 w-full text-black text-left bg-white shadow-lg z-10">
           <ul>
@@ -48,7 +50,7 @@ export default function Dropdown({
                     window.location.href = link;
                   }}
                 >
-                  {title}
+                  {t(title)}
                 </a>
               </li>
             ))}

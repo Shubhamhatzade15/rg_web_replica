@@ -4,8 +4,12 @@ import "./Hero.css";
 import bgImage from "./background.png";
 import { useState } from "react";
 import { supabase } from "../../../[locale]/supabase";
+import { useTranslations } from "next-intl";
 
 export default function Hero() {
+
+  const t = useTranslations("home");
+
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
@@ -115,10 +119,10 @@ export default function Hero() {
         </div>
         <div className="space-y-4 place-content-center" data-aos="fade-up">
           <h3 className="text-3xl text-center lg:text-left">
-            Join Our Movement
+            {t("join")}
           </h3>
           <form onSubmit={handleSubmit}>
-            <p className="text-xl font-bold">Name*</p>
+            <p className="text-xl font-bold">{t("name")}*</p>
             <input
               type="text"
               className="w-full block border-2 p-2"
@@ -128,7 +132,7 @@ export default function Hero() {
               onChange={handleChange}
               required
             />
-            <p className="text-xl font-bold">Email*</p>
+            <p className="text-xl font-bold">{t("email")}*</p>
             <input
               type="email"
               className="w-full block border-2 p-2 w-full"
@@ -138,7 +142,7 @@ export default function Hero() {
               onChange={handleChange}
               required
             />
-            <p className="text-xl font-bold">Phone Number*</p>
+            <p className="text-xl font-bold">{t("phone")}*</p>
             <input
               type="tel"
               className="w-full block border-2 p-2 w-full"
@@ -153,7 +157,7 @@ export default function Hero() {
               <div className="grid grid-cols-1 place-items-center mt-10">
                 <button className="border-2 p-2 text-white bg-black uppercase w-full md:w-fit rounded-xl">
                   {
-                    loading ? "Posting Data..." : "Submit"
+                    t(loading ? "Posting Data..." : "submit")
                   }
                 </button>
               </div>

@@ -1,12 +1,73 @@
 {
   "name": "Dr. Prashant Padole",
+  "english": "English",
+  "marathi": "Marathi",
+  "header": {
+    "home": "Home",
+    "about": "About",
+    "issues": "Issues",
+    "constituency": "Constituency",
+    "news": "News and Features",
+    "media": "Media",
+    "assets": "Assets",
+    "social": "Social Media",
+    "facebook": "FACEBOOK",
+    "instagram": "INSTAGRAM",
+    "twitter": "TWITTER",
+    "language": "Language"
+  },
+  "home": {
+    "join": "Join Our Movement",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone Number",
+    "pin": "Pin Code",
+    "submit": "Submit",
+    "posting": "Posting Data...",
+    "mission": "To provide your support to our mission of a secular, democratic, just and inclusive India, join the conversation and sign up below,",
+    "support": "Support Us"
+  },
   "about": {
     "title": "About Dr. Prashant Padole",
     "para1": "Dr. Prashant Yadavrao Padole is an eminent figure who has left an indelible impact on the Bhandara-Gondiya constituency through his unwavering strength and compassion. As a leader, Dr. Padole showcases exemplary qualities that inspire those around him. His active engagement in social initiatives and notable participation in the Bhandara District Cooperative Bank elections demonstrate his visionary leadership. By actively involving himself in various community endeavors, Dr. Padole fosters a sense of unity and progress, encouraging individuals to come together for the betterment of society.With a distinguished educational background that includes an MBBS and MD, he not only possesses exceptional medical expertise but also exemplifies a deep-rooted dedication to his profession."
   },
   "issues": {
     "links": {
-        "1": "Jobs and MSME"
+      "1": "Jobs and MSME"
     }
+  },
+  "footer": {
+    "home": {
+      "title": "Home",
+      "join": "Join Our Movement",
+      "feed": "Feed"
+    },
+    "about": {
+      "title": "About",
+      "about": "About Dr. Prashant Padole"
+    },
+    "issues": {
+      "title": "Issues",
+      "jobs": "Jobs and MSME",
+      "agriculture": "Agriculture",
+      "bill": "Land Acquistion Bill",
+      "women": "Women Empowerment",
+      "rti": "Right To Information",
+      "net": "Net Neutrality"
+    },
+    "constituency": {
+      "title": "Constituency",
+      "bhandara": "Bhandara",
+      "gondia": "Gondia"
+    },
+    "media": {
+      "title": "Media",
+      "videos": "Videos",
+      "photos": "Photos"
+    },
+    "connect": "Connect with Dr. Prashant Padole",
+    "terms": "Terms and Conditions",
+    "privacy": "Privacy Policy",
+    "developer": "Designed & Developed By"
   }
 }
