@@ -1,5 +1,5 @@
 import React from "react";
-
+import { useTranslations } from "next-intl";
 import Hero from "../Hero";
 import Breadcrumb from "../BreadCrumb";
 
@@ -19,6 +19,7 @@ const roboto_f = Roboto_Flex({ subsets: ["latin"] });
 const hero_banner = "/assets/LandingPage/hero_new.jpg";
 
 export default function page() {
+  const t = useTranslations("constituency.bhandara");
   return (
     <div>
       <Hero bannerSrc={hero_banner} />
@@ -28,7 +29,7 @@ export default function page() {
         <div className="px-4 md:px-10">
           <div className="flex flex-col justify-start items-start md:flex-row md:justify-between md:items-center">
             <div className="order-2 md:order-1 text-3xl text-[#032B5B]">
-              Sakoli
+            {t("sakoli")}
             </div>
             <div className="order-1 md:order-2 grid grid-cols-4 gap-2 text-xl">
               <a
@@ -66,7 +67,7 @@ export default function page() {
           {/* Bread crumb */}
 
           <div className="mt-5 bg-gray-100 ">
-            <Breadcrumb pageName="Sakoli" />
+            <Breadcrumb pageName={t("sakoli")} />
           </div>
 
           {/* Page text */}
@@ -75,74 +76,68 @@ export default function page() {
             className={`content-ized mt-5 text-justify text-sm md:text-base ${roboto_f.className}`}
           >
             <p>
-              Sakoli Assembly constituency is one of the 288 Maharashtra Vidhan
-              Sabha (legislative assembly) constituencies in Maharashtra state
-              in central India. This constituency is one of the three
-              constituencies located in the Bhandara district.
+            {t("t6")}
               <br />
               <br />
-              Sakoli is part of the Bhandara-Gondiya Lok Sabha constituency
-              along with five other Vidhan Sabha segments, namely Bhandara and
-              Tumsar in Bhandara district and Gondiya, Arjuni Morgaon and Tirora
-              in the Gondia district.
+              {t("t7")}
               <br />
               <br />
             </p>
             <h4 className="text-xl font-bold">
-              Members of Legislative assembly
+            {t("member")}
             </h4>
             <div className="border-2 border-black divide-y-2 divide-black">
               <div className="grid grid-cols-3 divide-x-2 divide-black">
                 <p className="p-2">1962</p>
-                <p className="p-2">Adkuji Sonuji Paulsagade</p>
-                <p className="p-2">Indian National Congress</p>
+                <p className="p-2">{t("adkuji")}</p>
+                <p className="p-2">{t("INC")}</p>
               </div>
               <div className="grid grid-cols-3 divide-x-2 divide-black">
                 <p className="p-2">1967</p>
                 <span>
-                  <p className="p-2">Shamrao Kapgate</p>
+                  <p className="p-2">{t("shamrao")}</p>
                 </span>
-                <p className="p-2">Bharatiya Jana Sangh</p>
+                <p className="p-2">{t("BJP")}</p>
               </div>
               <div className="grid grid-cols-3 divide-x-2 divide-black">
                 <p className="p-2">1972</p>
-                <p className="p-2">Martand Kapgate</p>
-                <p className="p-2">Indian National Congress</p>
+                <p className="p-2">{t("martand")}</p>
+                <p className="p-2">{t("INC")}</p>
               </div>
               <div className="grid grid-cols-3 divide-x-2 divide-black">
                 <p className="p-2">1978</p>
-                <p className="p-2"> Madhukar Bedarkar</p>
-                <p className="p-2">Indian National Congress</p>
+                <p className="p-2">{t("madhukarb")}</p>
+                <p className="p-2">{t("INC")}</p>
               </div>
               <div className="grid grid-cols-3 divide-x-2 divide-black">
                 <p className="p-2">1980</p>
-                <p className="p-2">Jayant Katakwar</p>
-                <p className="p-2">Indian National Congress</p>
+                <p className="p-2">{t("jayant")}</p>
+                <p className="p-2">{t("INC")}</p>
               </div>
               <div className="grid grid-cols-3 divide-x-2 divide-black">
                 <p className="p-2">1990</p>
-                <p className="p-2">Hemkrishna Kapgate</p>
-                <p className="p-2">Bharatiya Janata Party</p>
+                <p className="p-2">{t("hem")}</p>
+                <p className="p-2">{t("BJP")}</p>
               </div>
               <div className="grid grid-cols-3 divide-x-2 divide-black">
                 <p className="p-2">1999</p>
-                <p className="p-2">Sewakbhau Nirdhanji Waghaye</p>
-                <p className="p-2">Indian National Congress</p>
+                <p className="p-2">{t("sewak")}</p>
+                <p className="p-2">{t("INC")}</p>
               </div>
               <div className="grid grid-cols-3 divide-x-2 divide-black">
                 <p className="p-2">2009</p>
-                <p className="p-2">Nana Patole</p>
-                <p className="p-2">Bharatiya Janata Party</p>
+                <p className="p-2">{t("nanap")}</p>
+                <p className="p-2">{t("BJP")}</p>
               </div>
               <div className="grid grid-cols-3 divide-x-2 divide-black">
                 <p className="p-2">2014</p>
-                <p className="p-2">Rajesh Lahanu Kashiwar</p>
-                <p className="p-2">Bharatiya Janata Party</p>
+                <p className="p-2">{t("rajesh")}</p>
+                <p className="p-2">{t("BJP")}</p>
               </div>
               <div className="grid grid-cols-3 divide-x-2 divide-black">
                 <p className="p-2">2019</p>
-                <p className="p-2">Nana Patole</p>
-                <p className="p-2">Indian National Congress</p>
+                <p className="p-2">{t("nanap")}</p>
+                <p className="p-2">{t("INC")}</p>
               </div>
             </div>
           </div>

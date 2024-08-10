@@ -1,19 +1,21 @@
 import React from "react";
 import "../../issues/style.css";
 import { Link } from "@/navigation";
+import { useTranslations } from "next-intl";
 
 export default function bhandara() {
+  const t = useTranslations("constituency");
   const issues = [
     {
-      title: "Arjuni-Morgaon (SC)",
+      title: "gondia.arjuni",
       link: "/constituency/gondiya/arjuni-morgaon",
     },
     {
-      title: "Tirora",
+      title: "gondia.tirora",
       link: "/constituency/gondiya/tirora",
     },
     {
-      title: "Gondia",
+      title: "gondia.gondia",
       link: "/constituency/gondiya/gondia",
     },
   ];
@@ -43,7 +45,7 @@ export default function bhandara() {
                 href={issue.link}
                 className="block w-full h-full py-4 px-2 group-hover:text-white"
               >
-                {issue.title}
+                {t(issue.title)}
               </Link>
             </div>
           );

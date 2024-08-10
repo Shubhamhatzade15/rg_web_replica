@@ -1,5 +1,5 @@
 import React from "react";
-
+import { useTranslations } from "next-intl";
 import Hero from "../Hero";
 import Breadcrumb from "../BreadCrumb";
 
@@ -19,6 +19,7 @@ const roboto_f = Roboto_Flex({ subsets: ["latin"] });
 const hero_banner = "/assets/LandingPage/hero_new.jpg";
 
 export default function page() {
+  const t = useTranslations("constituency.gondia");
   return (
     <div>
       <Hero bannerSrc={hero_banner} />
@@ -28,7 +29,7 @@ export default function page() {
         <div className="px-4 md:px-10">
           <div className="flex flex-col justify-start items-start md:flex-row md:justify-between md:items-center">
             <div className="order-2 md:order-1 text-3xl text-[#032B5B]">
-              Arjuni-Morgaon (SC)
+            {t("arjuni")}
             </div>
             <div className="order-1 md:order-2 grid grid-cols-4 gap-2 text-xl">
               <a
@@ -66,7 +67,7 @@ export default function page() {
           {/* Bread crumb */}
 
           <div className="mt-5 bg-gray-100 ">
-            <Breadcrumb pageName="Arjuni-Morgaon (SC)" />
+            <Breadcrumb pageName={t("arjuni")} />
           </div>
 
           {/* Page text */}
@@ -75,42 +76,36 @@ export default function page() {
             className={`content-ized mt-5 text-justify text-sm md:text-base ${roboto_f.className}`}
           >
             <p>
-              Arjuni Morgaon is one of the 288 Vidhan Sabha constituency of
-              Maharashtra state in India. This Constituency is one of the three
-              Constituencies located in the Gondia district.
+            {t("g1")}
               <br />
               <br />
-              It is part of the Bhandara-Gondiya Lok Sabha constituency along
-              with five other Vidhan Sabha segments, namely Sakoli, Bhandara,
-              Gondia, Tumsar and Tirora.
+              {t("g2")}
               <br />
               <br />
-              The constituency comprises Sadak-Arjuni tehsil, parts of Goregaon
-              tehesil, Revenue Circle Mohadi and Arjuni Morgaon tehsil as well
-              as subdivision.
+              {t("g3")}
               <br />
               <br />
             </p>
             <h4 className="text-xl font-bold">
-              Members of Legislative assembly
+            {t("member")}
             </h4>
             <div className="border-2 border-black divide-y-2 divide-black">
               <div className="grid grid-cols-3 divide-x-2 divide-black">
                 <p className="p-2">2009</p>
-                <p className="p-2">Rajkumar Badole</p>
+                <p className="p-2">{t("rajkumar")}</p>
                 <p></p>
               </div>
               <div className="grid grid-cols-3 divide-x-2 divide-black">
                 <p className="p-2">2014</p>
                 <span>
-                  <p className="p-2">Rajkumar Badole</p>
+                  <p className="p-2">{t("rajkumar")}</p>
                 </span>
                   <p></p>
               </div>
               <div className="grid grid-cols-3 divide-x-2 divide-black">
                 <p className="p-2">2019</p>
-                <p className="p-2">Manohar Chandrikapure</p>
-                <p className="p-2">Nationalist Congress Party</p>
+                <p className="p-2">{t("manohar")}</p>
+                <p className="p-2">{t("NCP")}</p>
               </div>
             </div>
           </div>

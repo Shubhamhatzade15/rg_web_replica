@@ -1,5 +1,5 @@
 import React from "react";
-
+import { useTranslations } from "next-intl";
 import Hero from "../Hero";
 import Breadcrumb from "../BreadCrumb";
 
@@ -19,6 +19,7 @@ const roboto_f = Roboto_Flex({ subsets: ["latin"] });
 const hero_banner = "/assets/LandingPage/hero_new.jpg";
 
 export default function page() {
+  const t = useTranslations("constituency.gondia");
   return (
     <div>
       <Hero bannerSrc={hero_banner} />
@@ -28,7 +29,7 @@ export default function page() {
         <div className="px-4 md:px-10">
           <div className="flex flex-col justify-start items-start md:flex-row md:justify-between md:items-center">
             <div className="order-2 md:order-1 text-3xl text-[#032B5B]">
-              Tirora
+            {t("tirora")}
             </div>
             <div className="order-1 md:order-2 grid grid-cols-4 gap-2 text-xl">
               <a
@@ -66,7 +67,7 @@ export default function page() {
           {/* Bread crumb */}
 
           <div className="mt-5 bg-gray-100 ">
-            <Breadcrumb pageName="Tirora" />
+            <Breadcrumb pageName={t("tirora")} />
           </div>
 
           {/* Page text */}
@@ -75,40 +76,33 @@ export default function page() {
             className={`content-ized mt-5 text-justify text-sm md:text-base ${roboto_f.className}`}
           >
             <p>
-              Tirora Assembly constituency is one of the 288 Vidhan Sabha
-              (legislative assembly) constituencies of Maharashtra state,
-              western India. This constituency is located in Gondiya district.
-              The delimitation of the constituency happened in 2008. As of 2019,
-              its representative is Vijay Bharatlal Rahangdale of the Bharatiya
-              Janata Party.
+            {t("g4")}
               <br />
               <br />
-              Tirora taluka and Tirora Municipal Council, parts of Gondiya
-              taluka viz. revenue circle Gangazari, part of Goregaon taluka viz.
-              revenue circle Goregaon.
+              {t("g5")}
               <br />
               <br />
             </p>
             <h4 className="text-xl font-bold">
-              Members of Legislative assembly
+            {t("member")}
             </h4>
             <div className="border-2 border-black divide-y-2 divide-black">
               <div className="grid grid-cols-3 divide-x-2 divide-black">
                 <p className="p-2">2004</p>
-                <p className="p-2">Dilip Bansod</p>
-                <p className="p-2">Nationalist Congress Party</p>
+                <p className="p-2">{t("dilip")}</p>
+                <p className="p-2">{t("NCP")}</p>
               </div>
               <div className="grid grid-cols-3 divide-x-2 divide-black">
                 <p className="p-2">2009</p>
                 <span>
-                  <p className="p-2">Khushal Bopche</p>
+                  <p className="p-2">{t("khushal")}</p>
                 </span>
-                <p className="p-2">Bharatiya Janata Party</p>
+                <p className="p-2">{t("BJP")}</p>
               </div>
               <div className="grid grid-cols-3 divide-x-2 divide-black">
                 <p className="p-2">2014</p>
-                <p className="p-2">Vijay Bharatlal Rahangdale</p>
-                <p className="p-2">Bharatiya Janata Party</p>
+                <p className="p-2">{t("vijay")}</p>
+                <p className="p-2">{t("BJP")}</p>
               </div>
             </div>
           </div>

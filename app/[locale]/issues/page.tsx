@@ -5,7 +5,7 @@ import "./style.css";
 import { Link } from "@/navigation";
 import { useTranslations } from "next-intl";
 
-export default function IssuesPage() {
+export default function page() {
   const t = useTranslations("issues");
   const issues = [
     {
@@ -29,23 +29,23 @@ export default function IssuesPage() {
       link: "/political-vision/right-to-information-act",
     },
     {
-      title: "Net Neutrality",
+      title: "links.6",
       link: "/political-vision/net-neutrality",
     },
     {
-      title: "Dalit Rights",
+      title: "links.7",
       link: "/political-vision/dalit-rights",
     },
     {
-      title: "Adivasi Rights",
+      title: "links.8",
       link: "/political-vision/adivasi-rights",
     },
     {
-      title: "NATIONAL RURAL EMPLOYEMENT GUARANTEE ACT",
+      title: "links.9",
       link: "/political-vision/national-rural-employment-guarantee-act",
     },
     {
-      title: "GOODS AND SERVICE TAX",
+      title: "links.10",
       link: "/political-vision/goods-and-services-tax",
     },
   ];

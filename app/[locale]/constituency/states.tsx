@@ -1,5 +1,5 @@
 import React from "react";
-
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { Link } from "@/navigation";
 
@@ -11,6 +11,7 @@ import { Montserrat } from "next/font/google";
 const mons = Montserrat({ subsets: ["latin"] });
 
 const states = () => {
+  const t = useTranslations("constituency");
   return (
     <main className={mons.className}>
       <div className="w-full h-full flex justify-center items-center mt-10 px-10">
@@ -28,7 +29,7 @@ const states = () => {
               href="/constituency/bhandara"
               className="text-[16px] md:text-[20px] lg:text-[25px] tracking-tighter underline mt-10 hover:text-gray-500 "
             >
-              Bhandara
+              {t("bhandara.titleb")}
             </Link>
           </div>
           <div className="bg-[#B7D1E2] p-5 flex flex-col justify-center items-center">
@@ -44,7 +45,7 @@ const states = () => {
               href="/constituency/gondiya"
               className="text-[16px] md:text-[20px] lg:text-[25px] tracking-tighter underline mt-10 hover:text-gray-500 "
             >
-              Gondiya
+              {t("gondia.gondia")}
             </Link>
           </div>
         </div>

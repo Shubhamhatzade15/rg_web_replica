@@ -2,8 +2,10 @@ import React from "react";
 import Hero from "./hero";
 import Image from "next/image";
 import Card from "./Card";
+import { useTranslations } from "next-intl";
 
 export default function page() {
+  const t = useTranslations("constituency");
   const news = [
     {
       img: "/news/timesofindia.webp",
@@ -73,7 +75,7 @@ export default function page() {
       <div className="bg-white p-10 md:px-80 md:pt-10">
         <div className="flex items-center justify-between">
           <h1 className="md:text-4xl text-3xl font-bold text-slate-900">
-            News And Features
+          {t("news")}
           </h1>
         </div>
         <br />

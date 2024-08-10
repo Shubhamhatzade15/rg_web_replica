@@ -1,5 +1,5 @@
 import React from "react";
-
+import { useTranslations } from "next-intl";
 import Hero from "../Hero";
 import Breadcrumb from "../BreadCrumb";
 
@@ -19,6 +19,7 @@ const roboto_f = Roboto_Flex({ subsets: ["latin"] });
 const hero_banner = "/assets/LandingPage/hero_new.jpg";
 
 export default function page() {
+  const t = useTranslations("issues.links");
   return (
     <div>
       <Hero bannerSrc={hero_banner} />
@@ -28,7 +29,7 @@ export default function page() {
         <div className="px-4 md:px-10">
           <div className="flex flex-col justify-start items-start md:flex-row md:justify-between md:items-center">
             <div className="order-2 md:order-1 text-3xl text-[#032B5B]">
-              Dalit Rights
+            {t("7")}
             </div>
             <div className="order-1 md:order-2 grid grid-cols-4 gap-2 text-xl">
               <a
@@ -66,7 +67,7 @@ export default function page() {
           {/* Bread crumb */}
 
           <div className="mt-5 bg-gray-100 ">
-            <Breadcrumb pageName="Dalit Rights" />
+            <Breadcrumb pageName={t("7")} />
           </div>
 
           {/* Page text */}
@@ -75,53 +76,22 @@ export default function page() {
             className={`content-ized mt-5 text-justify text-sm md:text-base ${roboto_f.className}`}
           >
             <p>
-              The caste system is not just a historical shame that divided
-              Indians and trapped our potential, we are still struggling to get
-              out of its dark shadow. Equality and social justice, were the
-              promises of Dr. B. R. Ambedkar&apos;s Constitution, but even
-              today, the persistence of caste blights many lives.
+            {t("71")}
               <br />
               <br />
-              Rohith Vemula, a Dalit PhD scholar in Hyderabad University, was
-              driven to suicide, for speaking against a world, where &quot;the
-              value of a man was reduced to his immediate identity and nearest
-              possibility - to a vote, to a number, to a thing. Never was a man
-              treated as a mind.&quot; I can only quote Rohit Vemula&apos;s
-              vision of a world where human beings can be truly valued &quot;as
-              glorious things made up of stardust, in every field, in studies,
-              in streets, in life and in death&quot;.
+              {t("72")}
               <br />
               <br />
-              In a hierarchical context, achieving equality takes an extra
-              effort. Right from universal adult suffrage, the Congress party
-              has aimed to establish the equal worth of every individual, and to
-              combat social discrimination. Land distribution, expanding access
-              to education and employment through reservations, boosting and
-              supporting Dalit voices in politics, are a part of this effort.
+              {t("73")}
               <br />
               <br />
-              Caste is a denial of equal opportunity, and we have tried to widen
-              possibilities for Dalits at every chance we get. Dalits still face
-              higher barriers at every level of education; they often lack the
-              strong networks needed for entrepreneurship. To take one example
-              of our efforts to correct this, it was a Congress government that
-              mandated a part of government procurement from Dalit businesses,
-              in small and medium enterprises.
+              {t("74")}
               <br />
               <br />
-              Achieving one&apos;s potential is possible only when one is free
-              from threat and discrimination. It was Congress leadership that
-              announced the Prevention of Atrocities Act to combat caste-based
-              crimes, and it was a Congress government that reserved seats for
-              SC/ST citizens in panchayats and as panchayat heads. Making these
-              rights real, and defending them from the socially powerful, is an
-              ongoing effort. Dalit women, in particular, face a double
-              challenge. But this struggle is one that I am wholly committed to,
-              as is the Congress party.
+              {t("75")}
               <br />
               <br />
-              We will raise our voices at any attempt to constrict Dalit dignity
-              and power, whether on a campus, a workplace, or in the streets.
+              {t("76")}
             </p>
           </div>
 
